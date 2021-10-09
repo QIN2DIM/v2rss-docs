@@ -1,1 +1,144 @@
 /* You can override SASS variables here. */
+
+// 补充的全局变量
+:root {
+  --side-bar-bg-color: #fff;
+  --control-text-color: #777;
+  --font-sans-serif: 'Ubuntu', 'Source Sans Pro', sans-serif !important;
+  --font-monospace: 'Fira Code', 'Roboto Mono', monospace !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+// 设置选中字体的区域背景颜色
+::selection {
+  background: #dae3ea;
+  color: #34495e;
+}
+
+::-moz-selection {
+  background: #dae3ea;
+  color: #34495e;
+}
+
+::-webkit-selection {
+  background: #dae3ea;
+  color: #34495e;
+}
+
+
+body {
+  font-family: var(--font-sans-serif);
+  color: #34495e;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6rem;
+  letter-spacing: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@mixin theme-light {
+  --gray-100: #f8f9fa;
+  --gray-200: #f8f8f8;
+  --gray-500: #adb5bd;
+
+  --color-link: #42b983;
+  --color-visited-link: #42b983;
+
+  --body-background: white;
+  --body-font-color: #34495e;
+
+  --icon-filter: none;
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+@mixin theme-dark {
+  --gray-100: rgba(255, 255, 255, 0.1);
+  --gray-200: rgba(255, 255, 255, 0.2);
+  --gray-500: rgba(255, 255, 255, 0.5);
+
+  --color-link: #84b2ff;
+  --color-visited-link: #b88dff;
+
+  --body-background: #343a40;
+  --body-font-color: #e9ecef;
+
+  --icon-filter: brightness(0) invert(1);
+
+  --hint-color-info: #6bf;
+  --hint-color-warning: #fd6;
+  --hint-color-danger: #f66;
+}
+
+
+.markdown {
+
+  h2 a,
+  h3 a {
+    color: #34495e;
+  }
+
+  // h1 {
+  //   padding-bottom: .4rem;
+  //   font-size: 2.2rem;
+  //   line-height: 1.3;
+  // }
+
+  // h2 {
+  //   font-size: 1.75rem;
+  //   font-family: var(--font-sans-serif);
+  //   line-height: 1.225;
+  //   margin: 35px 0 15px;
+  //   padding-bottom: 0.5em;
+  //   border-bottom: 1px solid #ddd;
+  //   font-weight: bold;
+  // }
+
+  
+
+  // 控制超链接样式
+  a {
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 2px;
+
+    // 滑鼠选中增加下划线
+    &:hover {
+      text-decoration: underline;
+    }
+
+    // 已点击链接变色
+    &:visited {
+      color: var(--color-visited-link);
+    }
+  }
+
+  // 行内代码样式
+  code {
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-family: var(--font-monospace);
+    font-size: 0.92rem;
+    color: #e96900;
+    background-color: #f8f8f8;
+  }
+}
+
+
+kbd {
+  margin: 0 .1em;
+  padding: .1em .6em;
+  font-size: .8em;
+  color: #242729;
+  background: #fff;
+  border: 1px solid #adb3b9;
+  border-radius: 3px;
+  box-shadow: 0px 1px 0 rgba(12, 13, 14, 0.2),0 0 0 2px #fff inset;
+  white-space: nowrap;
+  vertical-align: middle;
+}

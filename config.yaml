@@ -1,12 +1,16 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL: https://example.com/
-title: Hugo Book
+languageCode: en-us
+title: V2RSS
 theme: book
 
 # Book configuration
 disablePathToLower: true
 enableGitInfo: true
+
+
+hasCJKLanguage: true 
 
 # Needed for mermaid/katex shortcodes
 markup:
@@ -14,7 +18,7 @@ markup:
     renderer:
       unsafe: true
   tableOfContents:
-    startLevel: 1
+    startLevel: 2
 
 # Multi-lingual mode config
 # There are different options to translate files
@@ -42,6 +46,9 @@ menu:
     - name: "Discussions"
       url: "https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4"
       weight: 20
+    - name: "TG Studio"
+      url: "https://t.me/joinchat/HlB9SQJubb5VmNU5"
+      weight: 25
 
 params:
   # (Optional, default light) Sets color theme: light, dark or auto.
@@ -51,7 +58,7 @@ params:
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
-  BookToC: true
+  BookToC: false
 
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
@@ -81,7 +88,7 @@ params:
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath: edit/main/exampleSite
+  BookEditPath: "tree/main"
 
   # Configure the date format used on the pages
   # - In git information
@@ -107,8 +114,10 @@ params:
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
+  # 允许浏览过程中缓存页面信息，当访客再次访问时使用缓存加速渲染，也可脱机离线访问
   BookServiceWorker: true
 
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
+  # 翻译开关。因为本文档主要面向国内用户，不需要“翻译”
   BookTranslatedOnly: false

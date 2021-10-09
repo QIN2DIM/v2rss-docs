@@ -1,79 +1,63 @@
 ---
-title: 介绍
+title: 技术文档
 type: docs
+booktoc: false
 ---
 
-# 中文索引页
-
-{{< columns >}}
-## Astris ipse furtiva
-
-Est in vagis et Pittheus tu arge accipiter regia iram vocatur nurus. Omnes ut
-olivae sensit **arma sorori** deducit, inesset **crudus**, ego vetuere aliis,
-modo arsit? Utinam rapta fiducia valuere litora _adicit cursu_, ad facies
-
-<--->
-
-## Suis quot vota
-
-Ea _furtique_ risere fratres edidit terrae magis. Colla tam mihi tenebat:
-miseram excita suadent es pecudes iam. Concilio _quam_ velatus posset ait quod
-nunc! Fragosis suae dextra geruntur functus vulgata.
-{{< /columns >}}
+<div align="center">
+    <h1> V2RSS 云彩姬</h1>
+    <p>🚀 科学上网 从娃娃抓起</p>
+    <img src="https://img.shields.io/static/v1?message=reference&color=blue&style=for-the-badge&logo=micropython&label=python">
+    <img src="https://img.shields.io/github/license/qin2dim/v2raycloudspider?style=for-the-badge">
+	<a href="https://github.com/QIN2DIM/V2RayCloudSpider/releases"><img src="https://img.shields.io/github/downloads/qin2dim/v2raycloudspider/total?style=for-the-badge"></a>
+	<a href="https://github.com/QIN2DIM/V2RayCloudSpider/releases"><img src="https://img.shields.io/github/v/release/qin2dim/v2raycloudspider?style=for-the-badge"></a>
+	<br>
+	<a href="https://github.com/QIN2DIM/V2RayCloudSpider"><img src="https://img.shields.io/github/stars/qin2dim/v2raycloudspider?style=social"></a>
+	<a href = "https://t.me/joinchat/HlB9SQJubb5VmNU5"><img src="https://img.shields.io/static/v1?style=social&logo=telegram&label=chat&message=studio" ></a>
+	<br>
+	<br>
+</div>
 
 
-## Tempora nisi nunc
+## **简要声明** 🧙‍♂️
 
-Lorem **markdownum** emicat gestu. Cannis sol pressit ducta. **Est** Idaei,
-tremens ausim se tutaeque, illi ulnis hausit, sed, lumina cutem. Quae avis
-sequens!
+请项目使用者遵守如下约定，以免对你 我造成不必要的麻烦。
 
-    var panel = ram_design;
-    if (backup + system) {
-        file.readPoint = network_native;
-        sidebar_engine_device(cell_tftp_raster,
-                dual_login_paper.adf_vci.application_reader_design(
-                graphicsNvramCdma, lpi_footer_snmp, integer_model));
-    }
-    public_keyboard_docking += error.controller_gibibyte_plug.ip(4,
-            asciiPetaflops, software(supercomputer_compatible_status + 4));
-    dynamic_disk.indexModeLaptop = bufferTftpReality;
-    var export_vlog_sequence = trinitron_flowchart + supercomputer_cluster_rj(
-            -1, toolbar_powerpoint_query, -2 / multiprocessing_impression);
+{{< hint info>}}
 
-## Locis suis novi cum suoque decidit eadem
+1. 本项目开源免费，请不要滥用接口；
+2. 本项目软件及源码禁止在国内网络环境大范围传播；
+3. 禁止任何人使用本项目及其分支提供任何形式的收费代理服务。
 
-Idmoniae ripis, at aves, ali missa adest, ut _et autem_, et ab? Venit spes
-versus finis sermonibus patefecit murum nec est sine oculis. _Ille_ inmota
-macies domoque caelestia cadit tantummodo scelus procul, corde!
+{{< /hint >}}
 
-1. Dolentem capi parte rostro alvum habentem pudor
-2. Fulgentia sanguine paret
-3. E punior consurgit lentus
-4. Vox hasta eras micantes
+## **项目简介** 👋
 
-## Facibus pharetrae indetonsusque indulsit sic incurrite foliis
+[V2RSS](https://github.com/QIN2DIM/V2RayCloudSpider) 是一个针对全球范围内基于 [SSPanel-Uim](https://github.com/Anankke/SSPanel-Uim) 框架产出的「机场」进行垂直挖掘的「生态系统」；能够自主生成针对主流协议头的自下而上的「聚合采集」任务；能够自我消化并产出相较于 [proxypool](https://github.com/zu1k/proxypool) 更加纯净可靠的代理节点，具备自主发现，服务自愈等强大的生产特性。
 
-Nefandam et prisci palmas! Blandita cutis flectitur montis macies, te _nati_
-Latiis; turbaque inferias. Virginis tibi peracta avidusque facies caper nec, e
-at ademptae, mira.
+##  **快速上手** 🛴
 
-    direct *= font(inputScareware(sliHome), crossplatform.byte(
-            ppl_encryption.excel_e_rte(integratedModelModifier), timeVirtual,
-            floating_speakers.media_printer(us, yahoo, primaryPhp)));
-    friendly_metal_flatbed(cd, isoPrimaryStorage(reader), dmaMirrored);
-    if (parse_flash_cron.metalGif(1, adServiceDevice, utility)) {
-        adf -= operation_cdma_samba;
-        imapGif.switch += torrent;
-    } else {
-        pmu.disk_captcha = digital_ppp_pci + recursionTransistor(5, dram);
-        ajax_service += grayscalePythonLock;
-        google_scroll_capacity = ftp + engine_dslam_sidebar / tape - 1;
-    }
-    drive_rw = zipTftp;
-    var suffix = software_router_extension.dimm_ddr(-5,
-            kernel_digital_minisite);
+### 用户
 
-Vocavit toto; alas **mitis** maestus in liquidarum ab legi finitimosque dominam
-tibi subitus; Orionis vertitur nota. Currere alti etiam seroque cernitis
-innumeris miraturus amplectique collo sustinet quemque! Litora ante turba?
+Step1: 软件获取[Windows-64bit <约17MiB>](https://github.com/QIN2DIM/V2RayCloudSpider/releases)
+
+Step2: 软件使用[云彩姬使用指南](/docs/user/v2rss-cli/overview)
+
+Step3: 期待好评 [✨](https://github.com/QIN2DIM/V2RayCloudSpider)
+
+### 开发者
+
+Step1: Fork 项目 [🥂](https://github.com/QIN2DIM/V2RayCloudSpider)
+
+Step2: 根据[技术文档]()合理配置 [`config.yaml`](https://github.com/QIN2DIM/V2RayCloudSpider/blob/master/V2RaycSpider1225/src/config-sample.yaml) 
+
+Step3: 使用脚手架调试并部署服务
+
+ 
+
+## **联系我们** 📧
+
+> 本项目由海南大学机器人与人工智能协会数据挖掘小组 (`A-RAI.DM`) 提供维护
+
+- [**Email**](mailto:HainanU_arai@163.com?subject=GitHub-Issues) **||** [**Home**](https://a-rai.github.io/) **||** [**TG**](https://t.me/joinchat/HlB9SQJubb5VmNU5)
+
