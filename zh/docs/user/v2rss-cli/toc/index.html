@@ -1,0 +1,334 @@
+<!doctype html><html lang=zh dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="注意事项 # 进程冻结 # 📌 云彩姬会主动限制用户的请求频率。 软件内置的进程锁函数将综合 本地请求历史 与 服务时区残差 等多种因素锁死进程。封禁时间一般位">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="注意事项">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/zh/docs/user/v2rss-cli/toc/">
+<title>注意事项 | V2RSS</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.e5073fda64abe14ca5b606579e2edcfa2e4abfb6efff20e5ea8a62c0553fa76c.css integrity="sha256-5Qc/2mSr4UyltgZXni7c+i5Kv7bv/yDl6opiwFU/p2w=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/zh.search.min.0b73665e0bec10016a1102ed404c4825879e6c10c35a386defcc66ec54990fa8.js integrity="sha256-C3NmXgvsEAFqEQLtQExIJYeebBDDWjht78xm7FSZD6g=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://example.com/zh/docs/user/v2rss-cli/toc/index.xml title=V2RSS>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/zh/><span>V2RSS</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/svg/translate.svg class=book-icon alt=Languages>
+简体中文
+</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/>
+English
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle checked>
+<label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
+<a role=button>使用指南</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-2b972d89b8f8f7938533027041bbe17b class=toggle checked>
+<label for=section-2b972d89b8f8f7938533027041bbe17b class="flex justify-between">
+<a role=button>云彩姬</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/zh/docs/user/v2rss-cli/overview/>Overview</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/zh/docs/user/v2rss-cli/install/>下载资源</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/zh/docs/user/v2rss-cli/quick-start/>快速上手</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/zh/docs/user/v2rss-cli/toc/ class=active>注意事项</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c08313d7406b63cbb7fcd8168cf44116 class=toggle>
+<label for=section-c08313d7406b63cbb7fcd8168cf44116 class="flex justify-between">
+<a role=button>聊天机器人</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/zh/docs/user/bots/overview/>Overview</a>
+<ul>
+</ul>
+</li>
+<li>
+<span>Telegram Bot</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>DingTalk Bot</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>None Bot</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
+<label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
+<a href=https://example.com/zh/docs/player/>开发指南</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class=toggle>
+<label for=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class="flex justify-between">
+<a role=button>开始使用</a>
+</label>
+<ul>
+<li>
+<span>快速上手</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>源码下载</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>基本用法</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>目录结构</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>项目配置</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a role=button>托管 & 部署</a>
+</label>
+<ul>
+<li>
+<span>V2rss Deploy</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Host on GitHub</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
+<label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
+<a role=button>脚手架指令</a>
+</label>
+<ul>
+<li>
+<span>Scaffold Ping</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Decouple</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Overdue</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Remain</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Parse</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Build</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Spawn</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Server</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://blog.echosec.top target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>
+GitHub
+</a>
+</li>
+<li>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>
+Discussions
+</a>
+</li>
+<li>
+<a href=https://t.me/joinchat/HlB9SQJubb5VmNU5 target=_blank rel=noopener>
+TG Studio
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>注意事项</strong>
+<label for=toc-control>
+</label>
+</div>
+<link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
+</header>
+<article class=markdown><h2 id=注意事项>
+注意事项
+<a class=anchor href=#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9>#</a>
+</h2>
+<h3 id=进程冻结>
+进程冻结
+<a class=anchor href=#%e8%bf%9b%e7%a8%8b%e5%86%bb%e7%bb%93>#</a>
+</h3>
+<blockquote class="book-hint warning">
+📌 云彩姬会主动限制用户的请求频率。
+</blockquote>
+<p>软件内置的进程锁函数将综合 <u>本地请求历史</u> 与 <u>服务时区残差</u> 等多种因素锁死进程。封禁时间一般位于 15~45s 之间。</p>
+<div class=book-expand>
+<label>
+<div class="book-expand-head flex justify-between">
+<span>展开插图</span>
+<span>↕</span>
+</div>
+<input type=checkbox class=hidden>
+<div class="book-expand-content markdown-inner">
+<div align=center><img src=AQvIyKTFLg8ERO7.png alt=进程冻结></div>
+</div>
+</label>
+</div>
+<h3 id=其他声明>
+<strong>其他声明</strong>
+<a class=anchor href=#%e5%85%b6%e4%bb%96%e5%a3%b0%e6%98%8e>#</a>
+</h3>
+<blockquote class="book-hint info">
+<ul>
+<li>
+<p>云彩姬是一个由维护者提供的用于项目演示的 demo，并不是一个成熟的生产软件。</p>
+</li>
+<li>
+<p>若您在使用过程中遇到 <u>响应迟钝</u> 等问题，请检查您当前的网络状况，等待数秒后仍无响应请重启软件。</p>
+</li>
+<li>
+<p>若无特殊需求，本项目 <code>Panel</code> （云彩姬）将不再升级或更新，其余项目进度将在
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/projects>Projects</a> 中公示。</p>
+</li>
+<li>
+<p>无论是使用过程中遇到的困难，还是有关本项目的需求建议，您都可以在
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/issues/new/choose><code>issue</code></a> 中留言。</p>
+</li>
+</ul>
+</blockquote>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/efc98e6f27a73006f4db45990c278424c636ed0f title="最后修改者 QIN2DIM | October 9, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>October 9, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content.zh/docs/user/v2rss-cli/toc/_index.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+</main>
+</body>
+</html>

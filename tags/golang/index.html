@@ -1,40 +1,290 @@
-<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="golang"><meta property="og:description" content><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/tags/golang/"><title>golang | Hugo Book</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css integrity="sha256-RhgbyTN1upMgJudTs3xA5v+LsWqe93DHi8xmPkV3sbo=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.797e0b0a0d9528a6ebc035260e267033d4d0f58f92967c888b7c465213a24d43.js integrity="sha256-eX4LCg2VKKbrwDUmDiZwM9TQ9Y+SlnyIi3xGUhOiTUM=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script><link rel=alternate type=application/rss+xml href=https://example.com/tags/golang/index.xml title="Hugo Book"></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Hugo Book</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
-<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
-English</a></label><ul><li><a href=https://example.com/zh/>简体中文</a></li></ul></li></ul><ul><li class=book-section-flat><a href=https://example.com/docs/example/>Example Site</a><ul><li><a href=https://example.com/docs/example/table-of-contents/>Table of Contents</a><ul><li><a href=https://example.com/docs/example/table-of-contents/with-toc/>With ToC</a></li><li><a href=https://example.com/docs/example/table-of-contents/without-toc/>Without ToC</a></li></ul></li><li><input type=checkbox id=section-4e46b01272d410b3a99461d79326ddf4 class=toggle>
-<label for=section-4e46b01272d410b3a99461d79326ddf4 class="flex justify-between"><a role=button>Collapsed</a></label><ul><li><a href=https://example.com/docs/example/collapsed/3rd-level/>3rd Level</a><ul><li><a href=https://example.com/docs/example/collapsed/3rd-level/4th-level/>4th Level</a></li></ul></li></ul></li></ul></li><li class=book-section-flat><span>Shortcodes</span><ul><li><a href=https://example.com/docs/shortcodes/buttons/>Buttons</a></li><li><a href=https://example.com/docs/shortcodes/columns/>Columns</a></li><li><a href=https://example.com/docs/shortcodes/details/>Details</a></li><li><a href=https://example.com/docs/shortcodes/expand/>Expand</a></li><li><a href=https://example.com/docs/shortcodes/hints/>Hints</a></li><li><a href=https://example.com/docs/shortcodes/katex/>Katex</a></li><li><a href=https://example.com/docs/shortcodes/mermaid/>Mermaid</a></li><li><input type=checkbox id=section-d3fc1bf6d66cd84b896a0af9f40cb1d5 class=toggle>
-<label for=section-d3fc1bf6d66cd84b896a0af9f40cb1d5 class="flex justify-between"><a href=https://example.com/docs/shortcodes/section/>Section</a></label><ul><li><a href=https://example.com/docs/shortcodes/section/first-page/>First Page</a></li><li><a href=https://example.com/docs/shortcodes/section/second-page/>Second Page</a></li></ul></li><li><a href=https://example.com/docs/shortcodes/tabs/>Tabs</a></li></ul></li></ul><ul><li><a href=https://blog.echosec.top target=_blank rel=noopener>Blog</a></li><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>GitHub</a></li><li><a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>Discussions</a></li></ul></nav><script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content>
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="golang">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/tags/golang/">
+<title>golang | V2RSS</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.e5073fda64abe14ca5b606579e2edcfa2e4abfb6efff20e5ea8a62c0553fa76c.css integrity="sha256-5Qc/2mSr4UyltgZXni7c+i5Kv7bv/yDl6opiwFU/p2w=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.f11a7861385dc43b8da83a177715e9917adaa6a4d3197ecc307041300f442b8e.js integrity="sha256-8Rp4YThdxDuNqDoXdxXpkXrapqTTGX7MMHBBMA9EK44=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://example.com/tags/golang/index.xml title=V2RSS>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>V2RSS</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/svg/translate.svg class=book-icon alt=Languages>
+English
+</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/zh/>
+简体中文
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle>
+<label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
+<a href=https://example.com/docs/user/>User</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/user/v2rss-cli/>V2rss Panel</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c08313d7406b63cbb7fcd8168cf44116 class=toggle>
+<label for=section-c08313d7406b63cbb7fcd8168cf44116 class="flex justify-between">
+<a href=https://example.com/docs/user/bots/>Chatbot</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/user/bots/dingtalk-bot/>DingTalk Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/user/bots/none-bot/>None Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/user/bots/telegram-bot/>Telegram Bot</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
+<label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
+<a href=https://example.com/docs/player/>Player</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class=toggle>
+<label for=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class="flex justify-between">
+<a href=https://example.com/docs/player/getting-started/>Getting Started</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/player/getting-started/quick-start/>Quick Start</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/install-v2rss/>Install V2rss</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/basic-usage/>Basic Usage</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/directory-structure/>Directory Structure</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/configuration/>Configuration</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a href=https://example.com/docs/player/hosting-deployment/>Hostting & Deployment</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/player/hosting-deployment/v2rss-deploy/>V2rss Deploy</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/hosting-deployment/host-on-GitHub/>Host on GitHub</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
+<label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
+<a href=https://example.com/docs/player/cli/>CLI</a>
+</label>
+<ul>
+<li>
+<span>Scaffold Ping</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Decouple</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Overdue</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Remain</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Parse</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Build</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Spawn</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Server</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://blog.echosec.top target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>
+GitHub
+</a>
+</li>
+<li>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>
+Discussions
+</a>
+</li>
+<li>
+<a href=https://t.me/joinchat/HlB9SQJubb5VmNU5 target=_blank rel=noopener>
+TG Studio
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
 <strong>golang</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav><ul><li class=book-section-flat><strong>Categories</strong><ul><li class="flex justify-between"><a href=/categories/Development/>Development</a>
-<span>2</span></li><li class="flex justify-between"><a href=/categories/golang/>golang</a>
-<span>2</span></li></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/development/>development</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/go/>go</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/golang/>golang</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/hugo/>hugo</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/templates/>templates</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/themes/>themes</a>
-<span>1</span></li></ul></li></ul></nav></aside></header><article class="markdown book-post"><h2><a href=/posts/goisforlovers/>(Hu)go Template Primer</a></h2><h5>April 2, 2014</h5><div><a href=/categories/Development/>Development</a>,
-<a href=/categories/golang/>golang</a></div><div><a href=/tags/go/>go</a>,
+<label for=toc-control>
+</label>
+</div>
+<link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
+</header>
+<article class="markdown book-post">
+<h2>
+<a href=/posts/goisforlovers/>(Hu)go Template Primer</a>
+</h2>
+<h5>April 2, 2014</h5>
+<div>
+<a href=/categories/Development/>Development</a>,
+<a href=/categories/golang/>golang</a>
+</div>
+<div>
+<a href=/tags/go/>go</a>,
 <a href=/tags/golang/>golang</a>,
 <a href=/tags/templates/>templates</a>,
 <a href=/tags/themes/>themes</a>,
-<a href=/tags/development/>development</a></div><p>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
+<a href=/tags/development/>development</a>
+</div>
+<p>Hugo uses the excellent Go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in Go templates.
 This document is a brief primer on using Go templates.
-<a href=/posts/goisforlovers/>...</a></p></article><article class="markdown book-post"><h2><a href=/posts/hugoisforlovers/>Getting Started with Hugo</a></h2><h5>April 2, 2014</h5><div><a href=/categories/Development/>Development</a>,
-<a href=/categories/golang/>golang</a></div><div><a href=/tags/go/>go</a>,
+<a href=/posts/goisforlovers/>...</a>
+</p>
+</article>
+<article class="markdown book-post">
+<h2>
+<a href=/posts/hugoisforlovers/>Getting Started with Hugo</a>
+</h2>
+<h5>April 2, 2014</h5>
+<div>
+<a href=/categories/Development/>Development</a>,
+<a href=/categories/golang/>golang</a>
+</div>
+<div>
+<a href=/tags/go/>go</a>,
 <a href=/tags/golang/>golang</a>,
 <a href=/tags/hugo/>hugo</a>,
-<a href=/tags/development/>development</a></div><p>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
+<a href=/tags/development/>development</a>
+</div>
+<p>Step 1. Install Hugo # Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
 Step 2. Build the Docs # Hugo has its own example site which happens to also be the documentation site you are reading right now.
 Follow the following steps:
-<a href=/posts/hugoisforlovers/>...</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div><script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav><ul><li class=book-section-flat><strong>Categories</strong><ul><li class="flex justify-between"><a href=/categories/Development/>Development</a>
-<span>2</span></li><li class="flex justify-between"><a href=/categories/golang/>golang</a>
-<span>2</span></li></ul></li><li class=book-section-flat><strong>Tags</strong><ul><li class="flex justify-between"><a href=/tags/development/>development</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/go/>go</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/golang/>golang</a>
-<span>2</span></li><li class="flex justify-between"><a href=/tags/hugo/>hugo</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/templates/>templates</a>
-<span>1</span></li><li class="flex justify-between"><a href=/tags/themes/>themes</a>
-<span>1</span></li></ul></li></ul></nav></div></aside></main></body></html>
+<a href=/posts/hugoisforlovers/>...</a>
+</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+</main>
+</body>
+</html>

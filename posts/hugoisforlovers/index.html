@@ -1,30 +1,289 @@
-<!doctype html><html lang=en dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
 Step 2. Build the Docs #  Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:"><meta name=theme-color content="#FFFFFF"><meta name=color-scheme content="light dark"><meta property="og:title" content="Getting Started with Hugo"><meta property="og:description" content="Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
+Follow the following steps:">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Getting Started with Hugo">
+<meta property="og:description" content="Step 1. Install Hugo #  Go to Hugo releases and download the appropriate version for your OS and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at Install Hugo
 Step 2. Build the Docs #  Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:"><meta property="og:type" content="article"><meta property="og:url" content="https://example.com/posts/hugoisforlovers/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2014-04-02T00:00:00+00:00"><meta property="article:modified_time" content="2021-10-08T21:53:54+08:00"><title>Getting Started with Hugo | Hugo Book</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.46181bc93375ba932026e753b37c40e6ff8bb16a9ef770c78bcc663e4577b1ba.css integrity="sha256-RhgbyTN1upMgJudTs3xA5v+LsWqe93DHi8xmPkV3sbo=" crossorigin=anonymous><script defer src=/flexsearch.min.js></script><script defer src=/en.search.min.797e0b0a0d9528a6ebc035260e267033d4d0f58f92967c888b7c465213a24d43.js integrity="sha256-eX4LCg2VKKbrwDUmDiZwM9TQ9Y+SlnyIi3xGUhOiTUM=" crossorigin=anonymous></script><script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a class="flex align-center" href=/><span>Hugo Book</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul class=book-languages><li><input type=checkbox id=languages class=toggle>
-<label for=languages class="flex justify-between"><a role=button class="flex align-center"><img src=/svg/translate.svg class=book-icon alt=Languages>
-English</a></label><ul><li><a href=https://example.com/zh/>简体中文</a></li></ul></li></ul><ul><li class=book-section-flat><a href=https://example.com/docs/example/>Example Site</a><ul><li><a href=https://example.com/docs/example/table-of-contents/>Table of Contents</a><ul><li><a href=https://example.com/docs/example/table-of-contents/with-toc/>With ToC</a></li><li><a href=https://example.com/docs/example/table-of-contents/without-toc/>Without ToC</a></li></ul></li><li><input type=checkbox id=section-4e46b01272d410b3a99461d79326ddf4 class=toggle>
-<label for=section-4e46b01272d410b3a99461d79326ddf4 class="flex justify-between"><a role=button>Collapsed</a></label><ul><li><a href=https://example.com/docs/example/collapsed/3rd-level/>3rd Level</a><ul><li><a href=https://example.com/docs/example/collapsed/3rd-level/4th-level/>4th Level</a></li></ul></li></ul></li></ul></li><li class=book-section-flat><span>Shortcodes</span><ul><li><a href=https://example.com/docs/shortcodes/buttons/>Buttons</a></li><li><a href=https://example.com/docs/shortcodes/columns/>Columns</a></li><li><a href=https://example.com/docs/shortcodes/details/>Details</a></li><li><a href=https://example.com/docs/shortcodes/expand/>Expand</a></li><li><a href=https://example.com/docs/shortcodes/hints/>Hints</a></li><li><a href=https://example.com/docs/shortcodes/katex/>Katex</a></li><li><a href=https://example.com/docs/shortcodes/mermaid/>Mermaid</a></li><li><input type=checkbox id=section-d3fc1bf6d66cd84b896a0af9f40cb1d5 class=toggle>
-<label for=section-d3fc1bf6d66cd84b896a0af9f40cb1d5 class="flex justify-between"><a href=https://example.com/docs/shortcodes/section/>Section</a></label><ul><li><a href=https://example.com/docs/shortcodes/section/first-page/>First Page</a></li><li><a href=https://example.com/docs/shortcodes/section/second-page/>Second Page</a></li></ul></li><li><a href=https://example.com/docs/shortcodes/tabs/>Tabs</a></li></ul></li></ul><ul><li><a href=https://blog.echosec.top target=_blank rel=noopener>Blog</a></li><li><a href=/posts/>Blog</a></li><li><a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>GitHub</a></li><li><a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>Discussions</a></li></ul></nav><script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+Follow the following steps:">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://example.com/posts/hugoisforlovers/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2014-04-02T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-08T21:53:54+08:00">
+<title>Getting Started with Hugo | V2RSS</title>
+<link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.e5073fda64abe14ca5b606579e2edcfa2e4abfb6efff20e5ea8a62c0553fa76c.css integrity="sha256-5Qc/2mSr4UyltgZXni7c+i5Kv7bv/yDl6opiwFU/p2w=" crossorigin=anonymous>
+<script defer src=/flexsearch.min.js></script>
+<script defer src=/en.search.min.f11a7861385dc43b8da83a177715e9917adaa6a4d3197ecc307041300f442b8e.js integrity="sha256-8Rp4YThdxDuNqDoXdxXpkXrapqTTGX7MMHBBMA9EK44=" crossorigin=anonymous></script>
+<script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/><span>V2RSS</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/svg/translate.svg class=book-icon alt=Languages>
+English
+</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/zh/>
+简体中文
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle>
+<label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
+<a href=https://example.com/docs/user/>User</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/user/v2rss-cli/>V2rss Panel</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c08313d7406b63cbb7fcd8168cf44116 class=toggle>
+<label for=section-c08313d7406b63cbb7fcd8168cf44116 class="flex justify-between">
+<a href=https://example.com/docs/user/bots/>Chatbot</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/user/bots/dingtalk-bot/>DingTalk Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/user/bots/none-bot/>None Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/user/bots/telegram-bot/>Telegram Bot</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
+<label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
+<a href=https://example.com/docs/player/>Player</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class=toggle>
+<label for=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class="flex justify-between">
+<a href=https://example.com/docs/player/getting-started/>Getting Started</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/player/getting-started/quick-start/>Quick Start</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/install-v2rss/>Install V2rss</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/basic-usage/>Basic Usage</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/directory-structure/>Directory Structure</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/getting-started/configuration/>Configuration</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a href=https://example.com/docs/player/hosting-deployment/>Hostting & Deployment</a>
+</label>
+<ul>
+<li>
+<a href=https://example.com/docs/player/hosting-deployment/v2rss-deploy/>V2rss Deploy</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://example.com/docs/player/hosting-deployment/host-on-GitHub/>Host on GitHub</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
+<label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
+<a href=https://example.com/docs/player/cli/>CLI</a>
+</label>
+<ul>
+<li>
+<span>Scaffold Ping</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Decouple</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Overdue</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Remain</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Parse</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Build</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Spawn</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Server</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://blog.echosec.top target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>
+GitHub
+</a>
+</li>
+<li>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>
+Discussions
+</a>
+</li>
+<li>
+<a href=https://t.me/joinchat/HlB9SQJubb5VmNU5 target=_blank rel=noopener>
+TG Studio
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
 <strong>Getting Started with Hugo</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li><a href=#step-1-install-hugo>Step 1. Install Hugo</a></li><li><a href=#step-2-build-the-docs>Step 2. Build the Docs</a></li><li><a href=#step-3-change-the-docs-site>Step 3. Change the docs site</a></li><li><a href=#step-4-have-fun>Step 4. Have fun</a></li></ul></li></ul></nav></aside></header><article class=markdown><h1><a href=/posts/hugoisforlovers/>Getting Started with Hugo</a></h1><h5>April 2, 2014</h5><div><a href=/categories/Development/>Development</a>,
-<a href=/categories/golang/>golang</a></div><div><a href=/tags/go/>go</a>,
+<label for=toc-control>
+</label>
+</div>
+<link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
+</header>
+<article class=markdown>
+<h1>
+<a href=/posts/hugoisforlovers/>Getting Started with Hugo</a>
+</h1>
+<h5>April 2, 2014</h5>
+<div>
+<a href=/categories/Development/>Development</a>,
+<a href=/categories/golang/>golang</a>
+</div>
+<div>
+<a href=/tags/go/>go</a>,
 <a href=/tags/golang/>golang</a>,
 <a href=/tags/hugo/>hugo</a>,
-<a href=/tags/development/>development</a></div><h2 id=step-1-install-hugo>Step 1. Install Hugo
-<a class=anchor href=#step-1-install-hugo>#</a></h2><p>Go to
+<a href=/tags/development/>development</a>
+</div>
+<h2 id=step-1-install-hugo>
+Step 1. Install Hugo
+<a class=anchor href=#step-1-install-hugo>#</a>
+</h2>
+<p>Go to
 <a href=https://github.com/spf13/hugo/releases>Hugo releases</a> and download the
-appropriate version for your OS and architecture.</p><p>Save it somewhere specific as we will be using it in the next step.</p><p>More complete instructions are available at
-<a href=https://gohugo.io/getting-started/installing/>Install Hugo</a></p><h2 id=step-2-build-the-docs>Step 2. Build the Docs
-<a class=anchor href=#step-2-build-the-docs>#</a></h2><p>Hugo has its own example site which happens to also be the documentation site
-you are reading right now.</p><p>Follow the following steps:</p><ol><li>Clone the
-<a href=http://github.com/spf13/hugo>Hugo repository</a></li><li>Go into the repo</li><li>Run hugo in server mode and build the docs</li><li>Open your browser to http://localhost:1313</li></ol><p>Corresponding pseudo commands:</p><pre><code>git clone https://github.com/spf13/hugo
+appropriate version for your OS and architecture.</p>
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+<p>More complete instructions are available at
+<a href=https://gohugo.io/getting-started/installing/>Install Hugo</a></p>
+<h2 id=step-2-build-the-docs>
+Step 2. Build the Docs
+<a class=anchor href=#step-2-build-the-docs>#</a>
+</h2>
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+<p>Follow the following steps:</p>
+<ol>
+<li>Clone the
+<a href=http://github.com/spf13/hugo>Hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to http://localhost:1313</li>
+</ol>
+<p>Corresponding pseudo commands:</p>
+<pre><code>git clone https://github.com/spf13/hugo
 cd hugo
 /path/to/where/you/installed/hugo server --source=./docs
 &gt; 29 pages created
@@ -32,25 +291,64 @@ cd hugo
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
 &gt; Press ctrl+c to stop
-</code></pre><p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p><h2 id=step-3-change-the-docs-site>Step 3. Change the docs site
-<a class=anchor href=#step-3-change-the-docs-site>#</a></h2><p>Stop the Hugo process by hitting Ctrl+C.</p><p>Now we are going to run hugo again, but this time with hugo in watch mode.</p><pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+</code></pre>
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+<h2 id=step-3-change-the-docs-site>
+Step 3. Change the docs site
+<a class=anchor href=#step-3-change-the-docs-site>#</a>
+</h2>
+<p>Stop the Hugo process by hitting Ctrl+C.</p>
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 27 ms
 &gt; Web Server is available at http://localhost:1313
 &gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
 &gt; Press ctrl+c to stop
-</code></pre><p>Open your
+</code></pre>
+<p>Open your
 <a href=http://vim.spf13.com>favorite editor</a> and change one of the source
-content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p><p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
 are located at the same relative location as the url, in our case
-<code>docs/content/overview/quickstart.md</code>.</p><p>Change and save this file.. Notice what happened in your terminal.</p><pre><code>&gt; Change detected, rebuilding site
+<code>docs/content/overview/quickstart.md</code>.</p>
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+<pre><code>&gt; Change detected, rebuilding site
 
 &gt; 29 pages created
 &gt; 0 tags index created
 &gt; in 26 ms
-</code></pre><p>Refresh the browser and observe that the typo is now fixed.</p><p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
-Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p><h2 id=step-4-have-fun>Step 4. Have fun
-<a class=anchor href=#step-4-have-fun>#</a></h2><p>The best way to learn something is to play with it.</p></article><footer class=book-footer><div class="flex flex-wrap justify-between"><div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/e53cc44fd9da91ae57c0ddb98a620dd31b5d833f title="Last modified by QIN2DIM | October 8, 2021" target=_blank rel=noopener><img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 8, 2021</span></a></div><div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/edit/main/exampleSite/content/posts/hugoisforlovers.md target=_blank rel=noopener><img src=/svg/edit.svg class=book-icon alt=Edit>
-<span>Edit this page</span></a></div></div><script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script></footer><div class=book-comments></div><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li><a href=#step-1-install-hugo>Step 1. Install Hugo</a></li><li><a href=#step-2-build-the-docs>Step 2. Build the Docs</a></li><li><a href=#step-3-change-the-docs-site>Step 3. Change the docs site</a></li><li><a href=#step-4-have-fun>Step 4. Have fun</a></li></ul></li></ul></nav></div></aside></main></body></html>
+</code></pre>
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+<h2 id=step-4-have-fun>
+Step 4. Have fun
+<a class=anchor href=#step-4-have-fun>#</a>
+</h2>
+<p>The best way to learn something is to play with it.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/e53cc44fd9da91ae57c0ddb98a620dd31b5d833f title="Last modified by QIN2DIM | October 8, 2021" target=_blank rel=noopener>
+<img src=/svg/calendar.svg class=book-icon alt=Calendar>
+<span>October 8, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content/posts/hugoisforlovers.md target=_blank rel=noopener>
+<img src=/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+</main>
+</body>
+</html>
