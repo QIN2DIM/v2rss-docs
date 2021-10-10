@@ -29,7 +29,7 @@ weight: 1
 
 ## [scaffold overdue](/docs/player/cli/overdue)
 
-剔除 live 订阅池中的过失链接。
+剔除 live 订阅池中的过时链接。
 
 <---> <!-- magic separator, between columns -->
 
