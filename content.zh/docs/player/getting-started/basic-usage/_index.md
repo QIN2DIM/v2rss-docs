@@ -1,6 +1,6 @@
 ---
 title: "基本用法"
-weight: 3
+weight: 30
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

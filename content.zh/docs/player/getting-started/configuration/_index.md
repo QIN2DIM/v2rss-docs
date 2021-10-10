@@ -1,6 +1,6 @@
 ---
 title: "项目配置"
-weight: 5
+weight: 50
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false

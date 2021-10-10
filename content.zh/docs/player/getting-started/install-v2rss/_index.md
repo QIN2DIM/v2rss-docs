@@ -1,6 +1,6 @@
 ---
 title: "源码下载"
-weight: 2
+weight: 20
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
