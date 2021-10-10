@@ -15,7 +15,7 @@
 <link rel=alternate hreflang=en href=https://example.com/ title=技术文档>
 <link rel=stylesheet href=/book.min.e5073fda64abe14ca5b606579e2edcfa2e4abfb6efff20e5ea8a62c0553fa76c.css integrity="sha256-5Qc/2mSr4UyltgZXni7c+i5Kv7bv/yDl6opiwFU/p2w=" crossorigin=anonymous>
 <script defer src=/flexsearch.min.js></script>
-<script defer src=/zh.search.min.0b73665e0bec10016a1102ed404c4825879e6c10c35a386defcc66ec54990fa8.js integrity="sha256-C3NmXgvsEAFqEQLtQExIJYeebBDDWjht78xm7FSZD6g=" crossorigin=anonymous></script>
+<script defer src=/zh.search.min.e63b56bd668e5052aae63d55973a5ab40321231b354d7fc53a0327e5fe39cba7.js integrity="sha256-5jtWvWaOUFKq5j1VlzpatAMhIxs1TX/FOgMn5f45y6c=" crossorigin=anonymous></script>
 <script defer src=/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js integrity="sha256-b2+Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC+NdcPIvZhzk=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://example.com/zh/index.xml title=V2RSS>
 </head>
@@ -121,7 +121,7 @@ English
 <li class=book-section-flat>
 <input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
 <label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
-<a href=https://example.com/zh/docs/player/>开发指南</a>
+<a role=button>开发指南</a>
 </label>
 <ul>
 <li>
@@ -130,6 +130,11 @@ English
 <a role=button>开始使用</a>
 </label>
 <ul>
+<li>
+<a href=https://example.com/zh/docs/player/getting-started/overview/>环境复现</a>
+<ul>
+</ul>
+</li>
 <li>
 <span>快速上手</span>
 <ul>
@@ -158,29 +163,16 @@ English
 </ul>
 </li>
 <li>
-<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
-<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
-<a role=button>托管 & 部署</a>
-</label>
-<ul>
-<li>
-<span>V2rss Deploy</span>
-<ul>
-</ul>
-</li>
-<li>
-<span>Host on GitHub</span>
-<ul>
-</ul>
-</li>
-</ul>
-</li>
-<li>
 <input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
 <label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
 <a role=button>脚手架指令</a>
 </label>
 <ul>
+<li>
+<span>Overview</span>
+<ul>
+</ul>
+</li>
 <li>
 <span>Scaffold Ping</span>
 <ul>
@@ -218,6 +210,24 @@ English
 </li>
 <li>
 <span>Scaffold Server</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a role=button>托管 & 部署</a>
+</label>
+<ul>
+<li>
+<span>V2rss Deploy</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Host on GitHub</span>
 <ul>
 </ul>
 </li>
@@ -294,9 +304,9 @@ TG Studio
 <a class=anchor href=#%e9%a1%b9%e7%9b%ae%e7%ae%80%e4%bb%8b->#</a>
 </h2>
 <p>
-<a href=https://github.com/QIN2DIM/V2RayCloudSpider>V2RSS</a> 是一个针对全球范围内基于
-<a href=https://github.com/Anankke/SSPanel-Uim>SSPanel-Uim</a> 框架产出的「机场」进行垂直挖掘的「生态系统」；能够自主生成针对主流协议头的自下而上的「聚合采集」任务；能够自我消化并产出相较于
-<a href=https://github.com/zu1k/proxypool>proxypool</a> 更加纯净可靠的代理节点，具备自主发现，服务自愈等强大的生产特性。</p>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider>V2RSS</a> 是一个能对全球范围内基于
+<a href=https://github.com/Anankke/SSPanel-Uim>SSPanel-Uim</a> 框架产出的提供商进行垂直挖掘的「生态矿机」；能够自下而上地生成针对主流协议头的「聚合采集」任务；能够自我消化并产出相较于
+<a href=https://github.com/zu1k/proxypool>proxypool</a> 更加纯净可靠的代理节点；具备自主发现，服务自愈等强大的生产特性。</p>
 <h2 id=快速上手->
 <strong>快速上手</strong> 🛴
 <a class=anchor href=#%e5%bf%ab%e9%80%9f%e4%b8%8a%e6%89%8b->#</a>
@@ -311,9 +321,9 @@ TG Studio
 <a href=/zh/docs/user/v2rss-cli/overview/>云彩姬使用指南</a></p>
 <p>Step3: 期待好评
 <a href=https://github.com/QIN2DIM/V2RayCloudSpider>✨</a></p>
-<h3 id=开发者>
-开发者
-<a class=anchor href=#%e5%bc%80%e5%8f%91%e8%80%85>#</a>
+<h3 id=玩家>
+玩家
+<a class=anchor href=#%e7%8e%a9%e5%ae%b6>#</a>
 </h3>
 <p>Step1: Fork 项目
 <a href=https://github.com/QIN2DIM/V2RayCloudSpider>🥂</a></p>
@@ -326,7 +336,7 @@ TG Studio
 <a class=anchor href=#%e8%81%94%e7%b3%bb%e6%88%91%e4%bb%ac->#</a>
 </h2>
 <blockquote>
-<p>本项目由海南大学机器人与人工智能协会数据挖掘小组 (<code>A-RAI.DM</code>) 提供维护</p>
+<p>本项目由海南大学机器人与人工智能协会数据挖掘小组（<code>A-RAI.DM</code>）提供维护</p>
 </blockquote>
 <ul>
 <li>
@@ -337,9 +347,9 @@ TG Studio
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/efc98e6f27a73006f4db45990c278424c636ed0f title="最后修改者 QIN2DIM | October 9, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/9d561d4aa1431c1ed0881479ea7b7d27f6c5704e title="最后修改者 QIN2DIM | October 10, 2021" target=_blank rel=noopener>
 <img src=/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 9, 2021</span>
+<span>October 10, 2021</span>
 </a>
 </div>
 <div>
