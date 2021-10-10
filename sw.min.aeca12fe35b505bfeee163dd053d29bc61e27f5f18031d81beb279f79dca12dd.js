@@ -1,1 +1,0 @@
-navigator.serviceWorker&&navigator.serviceWorker.register("/v2rss-docs/sw.js",{scope:"/v2rss-docs/"})
