@@ -1,0 +1,446 @@
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Move static content to static #  Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ <root>/ ▾ images/ logo.png  should become
+▾ <root>/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Migrate to Hugo from Jekyll">
+<meta property="og:description" content="Move static content to static #  Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ <root>/ ▾ images/ logo.png  should become
+▾ <root>/ ▾ static/ ▾ images/ logo.png  Additionally, you&rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.echosec.top/v2rss-docs/posts/migrate-from-jekyll/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2014-03-10T00:00:00+00:00">
+<meta property="article:modified_time" content="2021-10-10T08:43:34+08:00">
+<title>Migrate to Hugo from Jekyll | V2RSS</title>
+<link rel=manifest href=/v2rss-docs/manifest.json>
+<link rel=icon href=/v2rss-docs/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/v2rss-docs/book.min.e5073fda64abe14ca5b606579e2edcfa2e4abfb6efff20e5ea8a62c0553fa76c.css integrity="sha256-5Qc/2mSr4UyltgZXni7c+i5Kv7bv/yDl6opiwFU/p2w=" crossorigin=anonymous>
+<script defer src=/v2rss-docs/flexsearch.min.js></script>
+<script defer src=/v2rss-docs/en.search.min.3bd5c2548c95019a51f1ee348b130ce78a8b9e135570ab3b348aa2bbf587213b.js integrity="sha256-O9XCVIyVAZpR8e40ixMM54qLnhNVcKs7NIqiu/WHITs=" crossorigin=anonymous></script>
+<script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/v2rss-docs/><span>V2RSS</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/v2rss-docs/svg/translate.svg class=book-icon alt=Languages>
+English
+</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/>
+简体中文
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle>
+<label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/>User</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/v2rss-cli/>V2rss Panel</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c08313d7406b63cbb7fcd8168cf44116 class=toggle>
+<label for=section-c08313d7406b63cbb7fcd8168cf44116 class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/bots/>Chatbot</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/bots/dingtalk-bot/>DingTalk Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/bots/none-bot/>None Bot</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/user/bots/telegram-bot/>Telegram Bot</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
+<label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/>Player</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class=toggle>
+<label for=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/>Getting Started</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/quick-start/>Quick Start</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/install-v2rss/>Install V2rss</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/basic-usage/>Basic Usage</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/directory-structure/>Directory Structure</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/getting-started/configuration/>Configuration</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/hosting-deployment/>Hostting & Deployment</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/hosting-deployment/v2rss-deploy/>V2rss Deploy</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/hosting-deployment/host-on-GitHub/>Host on GitHub</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
+<label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
+<a href=https://blog.echosec.top/v2rss-docs/docs/player/cli/>CLI</a>
+</label>
+<ul>
+<li>
+<span>Scaffold Ping</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Decouple</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Overdue</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Remain</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Parse</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Build</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Spawn</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Scaffold Server</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://blog.echosec.top target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>
+GitHub
+</a>
+</li>
+<li>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>
+Discussions
+</a>
+</li>
+<li>
+<a href=https://t.me/joinchat/HlB9SQJubb5VmNU5 target=_blank rel=noopener>
+TG Studio
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/v2rss-docs/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Migrate to Hugo from Jekyll</strong>
+<label for=toc-control>
+</label>
+</div>
+<link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
+</header>
+<article class=markdown>
+<h1>
+<a href=/v2rss-docs/posts/migrate-from-jekyll/>Migrate to Hugo from Jekyll</a>
+</h1>
+<h5>March 10, 2014</h5>
+<h2 id=move-static-content-to-static>
+Move static content to <code>static</code>
+<a class=anchor href=#move-static-content-to-static>#</a>
+</h2>
+<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p>
+<pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre>
+<p>should become</p>
+<pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre>
+<p>Additionally, you&rsquo;ll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+<h2 id=create-your-hugo-configuration-file>
+Create your Hugo configuration file
+<a class=anchor href=#create-your-hugo-configuration-file>#</a>
+</h2>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the
+<a href=/overview/configuration/>Hugo configuration documentation</a> for details.</p>
+<h2 id=set-your-configuration-publish-folder-to-_site>
+Set your configuration publish folder to <code>_site</code>
+<a class=anchor href=#set-your-configuration-publish-folder-to-_site>#</a>
+</h2>
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have
+<a href=http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you&rsquo;ll want to do one of two alternatives:</p>
+<ol>
+<li>
+<p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
+<pre><code> git submodule deinit _site
+ git rm _site
+ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre>
+</li>
+<li>
+<p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
+<pre><code> {
+     ..
+     &quot;publishdir&quot;: &quot;_site&quot;,
+     ..
+ }
+</code></pre>
+</li>
+</ol>
+<h2 id=convert-jekyll-templates-to-hugo-templates>
+Convert Jekyll templates to Hugo templates
+<a class=anchor href=#convert-jekyll-templates-to-hugo-templates>#</a>
+</h2>
+<p>That&rsquo;s the bulk of the work right here. The documentation is your friend. You should refer to
+<a href=http://jekyllrb.com/docs/templates/>Jekyll&rsquo;s template documentation</a> if you need to refresh your memory on how you built your blog and
+<a href=/layout/templates/>Hugo&rsquo;s template</a> to learn Hugo&rsquo;s way.</p>
+<p>As a single reference data point, converting my templates for
+<a href=http://heyitsalex.net/>heyitsalex.net</a> took me no more than a few hours.</p>
+<h2 id=convert-jekyll-plugins-to-hugo-shortcodes>
+Convert Jekyll plugins to Hugo shortcodes
+<a class=anchor href=#convert-jekyll-plugins-to-hugo-shortcodes>#</a>
+</h2>
+<p>Jekyll has
+<a href=http://jekyllrb.com/docs/plugins/>plugins</a>; Hugo has
+<a href=/doc/shortcodes/>shortcodes</a>. It&rsquo;s fairly trivial to do a port.</p>
+<h3 id=implementation>
+Implementation
+<a class=anchor href=#implementation>#</a>
+</h3>
+<p>As an example, I was using a custom
+<a href=https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
+<p>Jekyll&rsquo;s plugin:</p>
+<pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre>
+<p>is written as this Hugo shortcode:</p>
+<pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre>
+<h3 id=usage>
+Usage
+<a class=anchor href=#usage>#</a>
+</h3>
+<p>I simply changed:</p>
+<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre>
+<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
+<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre>
+<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
+<h2 id=finishing-touches>
+Finishing touches
+<a class=anchor href=#finishing-touches>#</a>
+</h2>
+<h3 id=fix-content>
+Fix content
+<a class=anchor href=#fix-content>#</a>
+</h3>
+<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
+<h3 id=clean-up>
+Clean up
+<a class=anchor href=#clean-up>#</a>
+</h3>
+<p>You&rsquo;ll want to remove the Jekyll configuration at this point. If you have anything else that isn&rsquo;t used, delete it.</p>
+<h2 id=a-practical-example-in-a-diff>
+A practical example in a diff
+<a class=anchor href=#a-practical-example-in-a-diff>#</a>
+</h2>
+<p>
+<a href=http://heyitsalex.net/>Hey, it&rsquo;s Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this
+<a href=https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610>diff</a>.</p>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/3c17198b894ef8facfa6773628ef45de13671ea0 title="Last modified by QIN2DIM | October 10, 2021" target=_blank rel=noopener>
+<img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
+<span>October 10, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content/posts/migrate-from-jekyll.md target=_blank rel=noopener>
+<img src=/v2rss-docs/svg/edit.svg class=book-icon alt=Edit>
+<span>Edit this page</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+</main>
+</body>
+</html>
