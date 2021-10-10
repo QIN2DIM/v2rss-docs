@@ -21,7 +21,7 @@ weight: 1
 
 {{< hint warning >}}
 
-📌 该项目基于 Windows 开发测试，基于Linux 调试部署，Mac 用户可能无法正常使用。
+📌 该项目基于 Windows 开发测试，基于 Linux 调试部署，Mac 用户可能无法正常使用。
 
 {{< /hint  >}}
 
