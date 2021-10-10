@@ -1,0 +1,341 @@
+<!doctype html><html lang=zh dir=ltr>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Scaffold Entropy # 打印当前主机活跃的采集队列，既当前采集器收到相关指令时会主动调用的任务实例。包含的信息段有存活周期 源链接 以及采集类型。 展开 demo ↕ {{ /expand }}">
+<meta name=theme-color content="#FFFFFF">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Scaffold Entropy">
+<meta property="og:description" content>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/">
+<title>Scaffold Entropy | V2RSS</title>
+<link rel=manifest href=/v2rss-docs/manifest.json>
+<link rel=icon href=/v2rss-docs/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/v2rss-docs/book.min.01dc5a000a9930a1cfb60d026a8322b673185afb3ee354f60f84883896f10f5e.css integrity="sha256-AdxaAAqZMKHPtg0CaoMitnMYWvs+41T2D4SIOJbxD14=" crossorigin=anonymous>
+<script defer src=/v2rss-docs/flexsearch.min.js></script>
+<script defer src=/v2rss-docs/zh.search.min.4cacfcae4b0415f5cb43c263a174ea954043da4b5d0626bc7c9152f216de106b.js integrity="sha256-TKz8rksEFfXLQ8JjoXTqlUBD2ktdBia8fJFS8hbeEGs=" crossorigin=anonymous></script>
+<script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
+<link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/index.xml title=V2RSS>
+</head>
+<body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a class="flex align-center" href=/v2rss-docs/zh/><span>V2RSS</span>
+</a>
+</h2>
+<div class=book-search>
+<input type=text id=book-search-input placeholder=搜索 aria-label=搜索 maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div>
+<ul id=book-search-results></ul>
+</div>
+<ul class=book-languages>
+<li>
+<input type=checkbox id=languages class=toggle>
+<label for=languages class="flex justify-between">
+<a role=button class="flex align-center">
+<img src=/v2rss-docs/svg/translate.svg class=book-icon alt=Languages>
+简体中文
+</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/>
+English
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class=book-section-flat>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle>
+<label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
+<a role=button>使用指南</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-2b972d89b8f8f7938533027041bbe17b class=toggle>
+<label for=section-2b972d89b8f8f7938533027041bbe17b class="flex justify-between">
+<a role=button>云彩姬</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/overview/>Overview</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/install/>下载资源</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/quick-start/>快速上手</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/toc/>注意事项</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-shortcut/>捷径</a>
+<ul>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-c08313d7406b63cbb7fcd8168cf44116 class=toggle>
+<label for=section-c08313d7406b63cbb7fcd8168cf44116 class="flex justify-between">
+<a role=button>聊天机器人</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/bots/overview/>Overview</a>
+<ul>
+</ul>
+</li>
+<li>
+<span>Telegram Bot</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>DingTalk Bot</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>None Bot</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=book-section-flat>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle checked>
+<label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
+<a role=button>开发指南</a>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class=toggle>
+<label for=section-a467ca43dbcdaf2ffbd8aeecc80a9440 class="flex justify-between">
+<a role=button>开始使用</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/overview/>环境复现</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/quick-start/>快速上手</a>
+<ul>
+</ul>
+</li>
+<li>
+<span>源码下载</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>基本用法</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>目录结构</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>项目配置</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle checked>
+<label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
+<a role=button>脚手架指令</a>
+</label>
+<ul>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/overview/>Overview</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/decouple/>Scaffold Decouple</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/overdue/>Scaffold Overdue</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/remain/>Scaffold Remain</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/parse/>Scaffold Parse</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/mining/>Scaffold Mining</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/ class=active>Scaffold Entropy</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/build/>Scaffold Build</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/panel/>Scaffold Panel</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ash/>Scaffold Ash</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/spawn/>Scaffold Spawn</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/server/>Scaffold Server</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ping/>Scaffold Ping</a>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<input type=checkbox id=section-723140cbe530ea3669e1696982bbe922 class=toggle>
+<label for=section-723140cbe530ea3669e1696982bbe922 class="flex justify-between">
+<a role=button>托管 & 部署</a>
+</label>
+<ul>
+<li>
+<span>V2rss Deploy</span>
+<ul>
+</ul>
+</li>
+<li>
+<span>Host on GitHub</span>
+<ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>
+<a href=https://blog.echosec.top target=_blank rel=noopener>
+Blog
+</a>
+</li>
+<li>
+<a href=https://github.com/qin2dim/V2rayCloudSpider target=_blank rel=noopener>
+GitHub
+</a>
+</li>
+<li>
+<a href=https://github.com/QIN2DIM/V2RayCloudSpider/discussions/categories/%E5%90%B9%E6%B0%B4 target=_blank rel=noopener>
+Discussions
+</a>
+</li>
+<li>
+<a href=https://t.me/joinchat/HlB9SQJubb5VmNU5 target=_blank rel=noopener>
+TG Studio
+</a>
+</li>
+</ul>
+</nav>
+<script>(function(){var a=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div>
+</aside>
+<div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/v2rss-docs/svg/menu.svg class=book-icon alt=Menu>
+</label>
+<strong>Scaffold Entropy</strong>
+<label for=toc-control>
+</label>
+</div>
+<link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
+</header>
+<article class=markdown><h2 id=scaffold-entropy>
+Scaffold Entropy
+<a class=anchor href=#scaffold-entropy>#</a>
+</h2>
+<p>打印当前主机活跃的采集队列，既当前采集器收到相关指令时会主动调用的任务实例。包含的信息段有<code>存活周期</code> <code>源链接</code> 以及<code>采集类型</code>。</p>
+<div class=book-expand>
+<label>
+<div class="book-expand-head flex justify-between">
+<span>展开 demo</span>
+<span>↕</span>
+</div>
+<input type=checkbox class=hidden>
+<div class="book-expand-content markdown-inner">
+<p><img src=SzqZVYl1ecQ4N6o.gif alt=12345></p>
+<p>{{ /expand }}</p>
+</div>
+</label>
+</div>
+</article>
+<footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/ecdf8129932040e72510f21ed4464c5cac5bdc80 title="最后修改者 QIN2DIM | October 10, 2021" target=_blank rel=noopener>
+<img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
+<span>October 10, 2021</span>
+</a>
+</div>
+<div>
+<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content.zh/docs/player/cli/entropy/_index.md target=_blank rel=noopener>
+<img src=/v2rss-docs/svg/edit.svg class=book-icon alt=Edit>
+<span>编辑本页</span>
+</a>
+</div>
+</div>
+<script>(function(){function a(c){const a=window.getSelection(),b=document.createRange();b.selectNodeContents(c),a.removeAllRanges(),a.addRange(b)}document.querySelectorAll("pre code").forEach(b=>{b.addEventListener("click",function(c){a(b.parentElement),navigator.clipboard&&navigator.clipboard.writeText(b.parentElement.textContent)})})})()</script>
+</footer>
+<div class=book-comments>
+</div>
+<label for=menu-control class="hidden book-menu-overlay"></label>
+</div>
+</main>
+</body>
+</html>
