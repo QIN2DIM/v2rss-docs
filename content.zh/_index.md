@@ -39,11 +39,9 @@ booktoc: false
 
 ### 用户
 
-Step1: 软件获取[Windows-64bit <约17MiB>](https://github.com/QIN2DIM/V2RayCloudSpider/releases)
+Step1: 阅读 [云彩姬使用指南](/docs/user/v2rss-cli/overview) 并运行 demo
 
-Step2: 软件使用[云彩姬使用指南](/docs/user/v2rss-cli/overview)
-
-Step3: 期待好评 [✨](https://github.com/QIN2DIM/V2RayCloudSpider)
+Step2: 期待好评 [✨](https://github.com/QIN2DIM/V2RayCloudSpider)
 
 ### 玩家
 
