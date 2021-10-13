@@ -13,7 +13,7 @@
 <link rel=icon href=/v2rss-docs/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/v2rss-docs/book.min.31cccedbc2b6812eb37d0d37cdf4cb30cb89bd41421d3d51da624e11baccfe92.css integrity="sha256-MczO28K2gS6zfQ03zfTLMMuJvUFCHT1R2mJOEbrM/pI=" crossorigin=anonymous>
 <script defer src=/v2rss-docs/flexsearch.min.js></script>
-<script defer src=/v2rss-docs/zh.search.min.4a9b5e86dbbc26dbade4b3459b728be62b7e01fd377ccb40ee3bb02052cb5114.js integrity="sha256-Sptehtu8Jtut5LNFm3KL5it+Af03fMtA7juwIFLLURQ=" crossorigin=anonymous></script>
+<script defer src=/v2rss-docs/zh.search.min.7cbca92f4023d6531b99ba22213cb56654e6243e7408abfe1bff77fe17a442e9.js integrity="sha256-fLypL0Aj1lMbmboiITy1ZlTmJD50CKv+G/93/hekQuk=" crossorigin=anonymous></script>
 <script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/user/bots/overview/index.xml title=V2RSS>
 </head>
@@ -311,10 +311,11 @@ Introduction to Chatbots
 <a href=https://zh.wikipedia.org/wiki/%E5%9B%BE%E7%81%B5%E6%B5%8B%E8%AF%95>图灵测试</a>，用于测试机器能否表现出与人等价或无法区分的
 <a href=https://zh.wikipedia.org/wiki/%e6%99%ba%e8%83%bd>智能</a>。这一概念的现代应用常被用来帮助简化人类与信息系统之间的互动。</p>
 <p>「
-<a href=https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA>聊天机器人</a>」是一种能够模拟人类对话，通过图灵测试，与人类通过富文本或语音进行在线聊天对话的软件应用程序。在不断增长的数字世界中，聊天机器人已能生产环境中替代人类完成耗时的、繁琐的任务，如
-<a href="https://baike.sogou.com/v66630.htm?ch=zhihu.topic">客户服务</a>或资讯获取。但遗憾的是仅有少部分聊天机器人会搭载
-<a href=https://zh.wikipedia.org/wiki/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86>NLP</a> 系统，其他大多数简单的系统只会撷取用户输入的关键字，再从数据库中找寻最合适的应答句。意味着许多投放在生产中的聊天机器人仍然无法正常地与人类进行对话，至今仍无能通过完整图灵测试的聊天机器人系统。</p>
+<a href=https://zh.wikipedia.org/wiki/%E8%81%8A%E5%A4%A9%E6%A9%9F%E5%99%A8%E4%BA%BA>聊天机器人</a>」是一种能够模拟人类对话，与人类通过富文本或语音进行在线聊天对话的软件应用程序。在不断增长的数字世界中，聊天机器人已能生产环境中替代人类完成耗时的、繁琐的任务，如
+<a href="https://baike.sogou.com/v66630.htm?ch=zhihu.topic">客户服务</a>或资讯获取。</p>
 <p>在顶层设计上，我们最常接触到的聊天机器人都具有两种属性，基于规则的应答和基于 NLP 的应答。</p>
+<p>我们常见的群管理机器人都是基于规则的，它们的发言与其说是「交流」更像是「Response」，旨在以人们喜闻乐见的形式传达「指令已完成」的信号。</p>
+<p>真正意义上的「聊天机器人」是极其罕见的。绝大多多数具备闲聊能力的聊天机器人，都只将聊天功能作为外部请求的响应式玩具。意味着许多投放在生产中的聊天机器人仍然无法正常地与人类进行对话。</p>
 <h2 id=rules-based-chatbots>
 Rules-based Chatbots
 <a class=anchor href=#rules-based-chatbots>#</a>
@@ -331,18 +332,33 @@ Limitations of Chatbots
 </h2>
 <p>聊天机器人仍然是一个与人工智能和机器学习有很大关系的发展中的领域，因此其在功能和使用案例方面有一些难以处理的限制：</p>
 <ul>
-<li>由于用于生成输出的数据库是固定和有限的，响应式聊天机器人在处理未知问题时可能会失败。</li>
-<li>聊天机器人的工作效率高度依赖于语言处理，在语音对话中常受用户口音和口误等非范式行为的限制。</li>
-<li>行业领先的聊天机器人已能在生产中处理多轮对话问题，但仍无法处理用户同时抛出的多个问题。</li>
-<li>性能优异的聊天机器人通常需要大量优质的对话数据来训练，所以目前行业中流行着「几家产品」与「一堆玩具」的诙谐盛况。</li>
-<li>聊天机器人难以管理非线性对话，必须与用户在同一类（个）话题上来回对话。</li>
-<li>来自用户的不理解与不信任，尤其是老年群体。</li>
-<li>数据安全问题，主要来自数据污染（诱导）和接口爆破。</li>
+<li>
+<p>由于用于生成输出的数据库是固定和有限的，响应式聊天机器人在处理未知问题时可能会失败。</p>
+</li>
+<li>
+<p>聊天机器人的工作效率高度依赖于语言处理，在语音对话中常受用户口音和口误等非范式行为的限制。</p>
+</li>
+<li>
+<p>行业领先的聊天机器人已能在生产中处理多轮对话问题（通常认为「聊得越久越智能」），但仍无法很好地处理用户同时抛出的多个问题。</p>
+<ul>
+<li>业界关于一对多分支对话的解决方案各有千秋，而大多数投放于生产环境的聊天机器人用于特种领域（如上文所述），能于开放领域中与来自不同语言不同文化地区的人类对话的聊天机器人风毛菱角，效果差强人意。</li>
+</ul>
+</li>
+<li>
+<p>性能优异的聊天机器人通常需要大量优质的对话数据来训练，所以目前行业中流行着「几家产品」与「一堆玩具」的诙谐盛况。</p>
+</li>
+<li>
+<p>常规的聊天机器人难以管理非线性对话，必须与用户在同一类（个）话题上来回对话。</p>
+<p>目前，「全双工开放式领域对话」是一个行业领先的实践方案，但其依赖的动态回复与平行处理机制较为复杂，难以复现。</p>
+</li>
+<li>
+<p>数据安全问题，主要来自数据污染（诱导）和接口爆破。</p>
+</li>
 </ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/f85948b6d42447effd7e7dad54040a44a1bcd53a title="最后修改者 QIN2DIM | October 13, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/cf0b18fd629a00a470fa7a8fd6624d0fefc51a93 title="最后修改者 QIN2DIM | October 13, 2021" target=_blank rel=noopener>
 <img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
 <span>October 13, 2021</span>
 </a>
