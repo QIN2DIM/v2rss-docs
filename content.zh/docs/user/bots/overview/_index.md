@@ -31,7 +31,7 @@ weight: 1
 
 ## Live Chatbots
 
-「即时聊天机器人」常被用以代替销售和技术支持团队实时回答问题。NLP 赋能的聊天机器人，可以更智能地理解用户的口语和输入问题，也能让我们实现效果更佳的多轮对话。这个新领域的成效远远超出了基于规则的响应式聊天机器人。但在「[新一代图灵测试](https://www.fastcompany.com/90590042/turing-test-obsolete-ai-benchmark-amazon-alexa)」业界趋同的大背景下，我们并不需要执着于「cheat human」与「think like human」的区别，也并不意味着无法闲聊的机器人就无法胜任代人完工的任务。
+「即时聊天机器人」常被用以代替销售和技术支持团队实时回答问题。NLP 赋能的聊天机器人，可以更智能地理解用户的口语和输入问题，也能让我们实现效果更佳的多轮对话。这个新领域的成效远远超出了基于规则的响应式聊天机器人。但在「[新一代图灵测试](https://www.fastcompany.com/90590042/turing-test-obsolete-ai-benchmark-amazon-alexa)」业界趋同的大背景下，我们并不需要执着于「cheat human」与「think like human」的区别，也不意味着无法闲聊的机器人就不能胜任「代人劳务」的工作。
 
 ## Limitations of Chatbots
 
