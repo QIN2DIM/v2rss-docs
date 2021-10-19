@@ -25,7 +25,7 @@ bookCollapseSection: false
 
 {{< /expand >}}
 
-若您无法访问 GitHub 或不幸失联，也可以使用 CFW 反向代理加速下载。点击下方 `Download` 按钮既可加速下载 `V2Ray云彩姬 v4.5.4` 客户端，之后可通过软体内置模块拉取最新版本特性。
+若您无法访问 GitHub 或不幸失联，也可以使用 CFW 反向代理加速下载。点击下方 `Download` 按钮既可加速下载 `V2RSS云彩姬 v4.5.4` 客户端，之后可通过软体内置模块拉取最新版本特性。
 
 {{< button href="https://curly-shape-d178.qinse.workers.dev/https://github.com/QIN2DIM/V2RayCloudSpider/releases/download/v4.5.4/v2rss_4.5.4_Windows-64bit.zip" >}}
 
