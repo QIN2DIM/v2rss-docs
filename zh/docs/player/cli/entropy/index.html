@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Scaffold Entropy # 打印当前主机活跃的采集队列，既当前采集器收到相关指令时会主动调用的任务实例。包含的信息段有存活周期 源链接 以及采集类型。 展开 demo ↕ {{ /expand }}">
+<meta name=description content="Scaffold Entropy # NAME # main.py entropy - 采集队列的命令行管理工具。 SYNOPSIS # main.py entropy <flags> DESCRIPTION # 采集队列的命令行管理工具。功能包括：更新待办任务、更新采集队列容量，检查待办任务心跳">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Scaffold Entropy">
 <meta property="og:description" content>
@@ -13,7 +13,7 @@
 <link rel=icon href=/v2rss-docs/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/v2rss-docs/book.min.31cccedbc2b6812eb37d0d37cdf4cb30cb89bd41421d3d51da624e11baccfe92.css integrity="sha256-MczO28K2gS6zfQ03zfTLMMuJvUFCHT1R2mJOEbrM/pI=" crossorigin=anonymous>
 <script defer src=/v2rss-docs/flexsearch.min.js></script>
-<script defer src=/v2rss-docs/zh.search.min.83d3ed5a5d8ee7b7874aa8fc9bae3956b90514ee91d3e302d31ced869dd69392.js integrity="sha256-g9PtWl2O57eHSqj8m645VrkFFO6R0+MC0xzthp3Wk5I=" crossorigin=anonymous></script>
+<script defer src=/v2rss-docs/zh.search.min.3b04b2863630709b404d6fc4613a42887ee3cdb96c689b2fbab153167ae9f04e.js integrity="sha256-OwSyhjYwcJtATW/EYTpCiH7jzblsaJsvurFTFnrp8E4=" crossorigin=anonymous></script>
 <script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/index.xml title=V2RSS>
 </head>
@@ -144,22 +144,22 @@ English
 </ul>
 </li>
 <li>
-<span>源码下载</span>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/install-v2rss/>源码下载</a>
 <ul>
 </ul>
 </li>
 <li>
-<span>基本用法</span>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/basic-usage/>基本用法</a>
 <ul>
 </ul>
 </li>
 <li>
-<span>目录结构</span>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/directory-structure/>目录结构</a>
 <ul>
 </ul>
 </li>
 <li>
-<span>项目配置</span>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/getting-started/configuration/>项目配置</a>
 <ul>
 </ul>
 </li>
@@ -177,32 +177,7 @@ English
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/decouple/>Scaffold Decouple</a>
-<ul>
-</ul>
-</li>
-<li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/overdue/>Scaffold Overdue</a>
-<ul>
-</ul>
-</li>
-<li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/remain/>Scaffold Remain</a>
-<ul>
-</ul>
-</li>
-<li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/parse/>Scaffold Parse</a>
-<ul>
-</ul>
-</li>
-<li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/mining/>Scaffold Mining</a>
-<ul>
-</ul>
-</li>
-<li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/ class=active>Scaffold Entropy</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ping/>Scaffold Ping</a>
 <ul>
 </ul>
 </li>
@@ -212,17 +187,17 @@ English
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/panel/>Scaffold Panel</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/pool/>Scaffold Pool</a>
 <ul>
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ash/>Scaffold Ash</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/deploy/>Scaffold Deploy</a>
 <ul>
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/spawn/>Scaffold Spawn</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/synergy/>Scaffold Synergy</a>
 <ul>
 </ul>
 </li>
@@ -232,7 +207,22 @@ English
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ping/>Scaffold Ping</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/entropy/ class=active>Scaffold Entropy</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/mining/>Scaffold Mining</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/spawn/>Scaffold Spawn</a>
+<ul>
+</ul>
+</li>
+<li>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/ash/>Scaffold Ash</a>
 <ul>
 </ul>
 </li>
@@ -301,26 +291,115 @@ TG Studio
 Scaffold Entropy
 <a class=anchor href=#scaffold-entropy>#</a>
 </h2>
-<p>打印当前主机活跃的采集队列，既当前采集器收到相关指令时会主动调用的任务实例。包含的信息段有<code>存活周期</code> <code>源链接</code> 以及<code>采集类型</code>。</p>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>展开 demo</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
-<p><img src=SzqZVYl1ecQ4N6o.gif alt=12345></p>
-<p>{{ /expand }}</p>
-</div>
-</label>
-</div>
+<h3 id=name>
+NAME
+<a class=anchor href=#name>#</a>
+</h3>
+<p>main.py entropy - 采集队列的命令行管理工具。</p>
+<h3 id=synopsis>
+SYNOPSIS
+<a class=anchor href=#synopsis>#</a>
+</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>main.py entropy &lt;flags&gt;
+</code></pre></div><h3 id=description>
+DESCRIPTION
+<a class=anchor href=#description>#</a>
+</h3>
+<p>采集队列的命令行管理工具。功能包括：更新待办任务、更新采集队列容量，检查待办任务心跳，输出采集队列摘要信息。基础用法如下：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python>Usage: python main<span style=color:#f92672>.</span>py entropy
+______________________________________________________________________
+<span style=color:#f92672>or</span>: python main<span style=color:#f92672>.</span>py entropy <span style=color:#f92672>--</span>remote <span style=color:#f92672>|</span>输出 <span style=color:#960050;background-color:#1e0010>`</span>远程执行队列<span style=color:#960050;background-color:#1e0010>`</span> 的摘要信息
+<span style=color:#f92672>or</span>: python main<span style=color:#f92672>.</span>py entropy <span style=color:#f92672>--</span>update <span style=color:#f92672>|</span>将 <span style=color:#960050;background-color:#1e0010>`</span>本地执行队列<span style=color:#960050;background-color:#1e0010>`</span> 辐射至远端
+<span style=color:#f92672>or</span>: python main<span style=color:#f92672>.</span>py entropy <span style=color:#f92672>--</span>check  <span style=color:#f92672>|</span>检查 <span style=color:#960050;background-color:#1e0010>`</span>本地执行队列<span style=color:#960050;background-color:#1e0010>`</span> 的健康状态
+<span style=color:#f92672>or</span>: python main<span style=color:#f92672>.</span>py entropy <span style=color:#f92672>--</span>cap    <span style=color:#f92672>|</span>将 <span style=color:#960050;background-color:#1e0010>`</span>POOL_CAP<span style=color:#960050;background-color:#1e0010>`</span> 队列容量映射到远端
+<span style=color:#f92672>or</span>: python main<span style=color:#f92672>.</span>py entropy <span style=color:#f92672>--</span>cap<span style=color:#f92672>=</span><span style=color:#ae81ff>8</span>  <span style=color:#f92672>|</span>手动修改远程队列容量
+______________________________________________________________________
+</code></pre></div><h4 id=remote-entropy-heap>
+Remote Entropy Heap
+<a class=anchor href=#remote-entropy-heap>#</a>
+</h4>
+<p>在 <code>v6.0.1-alpha </code>之后，采集器默认使用「远程共享队列」同步待办任务。意味着采集节点不再关心其所在物理服务器中的 <code>__entropy__</code> 列表，而是 <code>Remote EntropyHeap</code> 对象。</p>
+<p>Remote EntropyHeap Object 存储着若干个采集实例的上下文摘要信息，采集器读取这些数据后，根据一系列的生产逻辑，输出符合特征的实例，进而启动采集任务。</p>
+<p>手动修改 Remote EntropyHeap 需要执行 <code>python main.py entropy --update</code> 更新远程共享队列，此时所有采集器节点都会使用新的任务队列。切换操作是立即完成的，在采集器下一次任务预加载时生效。</p>
+<p>项目初始化时 Remote EntropyHeap 并不存在，直接执行脚手架 deploy 指令部署采集器后必然会保持空转，也即需要在项目初始化后执行一次 <code>python main.py entropy --update</code> 用以创建 Remote EntropyHeap，这样采集器才会读取到待办任务。</p>
+<p><code>--update</code> 的逻辑是将本地的 <code>__entropy__ </code>辐射到远端，一般在管理员服务器上使用（比如你的本地电脑）。
+在后期运维中，管理员发现新的可执行实例时，可以手动编写上下文摘要信息，录入 <code>__entropy__</code>，再使用此指令辐射到远程任务队列中。</p>
+<h4 id=unified-pool-capacity>
+Unified Pool Capacity
+<a class=anchor href=#unified-pool-capacity>#</a>
+</h4>
+<p>在 <code>v6.0.2-alpha</code> 之后，可以通过脚手架指令 <code>entropy --cap</code> 手动指定远程队列容量，同步操作是立即完成的，将在采集器下次任务预加载时生效。</p>
+<p>此指令不会覆盖本地 <code>POOL_CAP</code> 全局变量的值，也不会覆写任一节点的配置文件，而是创建或更新一个指定的 Redis-Key。</p>
+<h4 id=entropy-heartbeat>
+Entropy Heartbeat
+<a class=anchor href=#entropy-heartbeat>#</a>
+</h4>
+<p><code>--check</code> 指令可以检查本地队列的健康状态，如摘要信息是否配置正确，<code>register_url</code> 的通信状态等。</p>
+<h4 id=entropy-status>
+Entropy Status
+<a class=anchor href=#entropy-status>#</a>
+</h4>
+<p>不携带参数运行可以在控制台输出本地采集队列的摘要信息，添加 <code>--remote</code> 参数则输出远程队列的。</p>
+<h3 id=flags>
+FLAGS
+<a class=anchor href=#flags>#</a>
+</h3>
+<ul>
+<li>
+<p>update=UPDATE</p>
+<ul>
+<li>
+<p>Type: bool</p>
+</li>
+<li>
+<p>Default: False</p>
+<p>将 <code>本地执行队列</code> 辐射至远端</p>
+</li>
+</ul>
+</li>
+<li>
+<p>remote=REMOTE</p>
+<ul>
+<li>
+<p>Type: bool</p>
+</li>
+<li>
+<p>Default: False</p>
+<p>输出 <code>远程执行队列</code> 的摘要信息</p>
+</li>
+</ul>
+</li>
+<li>
+<p>check=CHECK</p>
+<ul>
+<li>
+<p>Type: bool</p>
+</li>
+<li>
+<p>Default: False</p>
+<p>检查 <code>本地执行队列</code> 的健康状态</p>
+</li>
+</ul>
+</li>
+<li>
+<p>cap=CAP</p>
+<ul>
+<li>
+<p>Type: Optional[int]</p>
+</li>
+<li>
+<p>Default: None</p>
+<p>修改远程队列容量</p>
+</li>
+</ul>
+</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/ecdf8129932040e72510f21ed4464c5cac5bdc80 title="最后修改者 QIN2DIM | October 10, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/1a3de1752435abc41c8d9732f562305441123271 title="最后修改者 QIN2DIM | January 14, 2022" target=_blank rel=noopener>
 <img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 10, 2021</span>
+<span>January 14, 2022</span>
 </a>
 </div>
 <div>

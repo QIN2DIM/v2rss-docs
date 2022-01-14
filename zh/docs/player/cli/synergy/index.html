@@ -2,20 +2,20 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="注意事项 # 进程冻结 # 📌 云彩姬会主动限制用户的请求频率。 软件内置的进程锁函数将综合 本地请求历史 与 服务时区残差 等多种因素锁死进程。封禁时间一般位">
+<meta name=description content="Scaffold Synergy # NAME # main.py synergy - 部署协同工作节点 SYNOPSIS # main.py synergy - DESCRIPTION # INTRO # 在介绍 协同工作 的概念前，需要先了解以下与之相关的背景知识。 在采集实例上下文超级参数 hyper_params 中设定">
 <meta name=theme-color content="#FFFFFF">
-<meta name=color-scheme content="light dark"><meta property="og:title" content="注意事项">
+<meta name=color-scheme content="light dark"><meta property="og:title" content="Scaffold Synergy">
 <meta property="og:description" content>
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/toc/">
-<title>注意事项 | V2RSS</title>
+<meta property="og:url" content="https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/synergy/">
+<title>Scaffold Synergy | V2RSS</title>
 <link rel=manifest href=/v2rss-docs/manifest.json>
 <link rel=icon href=/v2rss-docs/favicon.png type=image/x-icon>
 <link rel=stylesheet href=/v2rss-docs/book.min.31cccedbc2b6812eb37d0d37cdf4cb30cb89bd41421d3d51da624e11baccfe92.css integrity="sha256-MczO28K2gS6zfQ03zfTLMMuJvUFCHT1R2mJOEbrM/pI=" crossorigin=anonymous>
 <script defer src=/v2rss-docs/flexsearch.min.js></script>
 <script defer src=/v2rss-docs/zh.search.min.3b04b2863630709b404d6fc4613a42887ee3cdb96c689b2fbab153167ae9f04e.js integrity="sha256-OwSyhjYwcJtATW/EYTpCiH7jzblsaJsvurFTFnrp8E4=" crossorigin=anonymous></script>
 <script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
-<link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/toc/index.xml title=V2RSS>
+<link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/synergy/index.xml title=V2RSS>
 </head>
 <body dir=ltr>
 <input type=checkbox class="hidden toggle" id=menu-control>
@@ -53,13 +53,13 @@ English
 </ul>
 <ul>
 <li class=book-section-flat>
-<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle checked>
+<input type=checkbox id=section-b900152bb5efd8f491d123b5f73aa30d class=toggle>
 <label for=section-b900152bb5efd8f491d123b5f73aa30d class="flex justify-between">
 <a role=button>使用指南</a>
 </label>
 <ul>
 <li>
-<input type=checkbox id=section-2b972d89b8f8f7938533027041bbe17b class=toggle checked>
+<input type=checkbox id=section-2b972d89b8f8f7938533027041bbe17b class=toggle>
 <label for=section-2b972d89b8f8f7938533027041bbe17b class="flex justify-between">
 <a role=button>云彩姬</a>
 </label>
@@ -80,7 +80,7 @@ English
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/toc/ class=active>注意事项</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/user/v2rss-cli/toc/>注意事项</a>
 <ul>
 </ul>
 </li>
@@ -122,7 +122,7 @@ English
 </ul>
 </li>
 <li class=book-section-flat>
-<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle>
+<input type=checkbox id=section-27d250f93b10a45d08befdb5dd2f0f3b class=toggle checked>
 <label for=section-27d250f93b10a45d08befdb5dd2f0f3b class="flex justify-between">
 <a role=button>开发指南</a>
 </label>
@@ -166,7 +166,7 @@ English
 </ul>
 </li>
 <li>
-<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle>
+<input type=checkbox id=section-02591bebd5ca01427869ded3401321a8 class=toggle checked>
 <label for=section-02591bebd5ca01427869ded3401321a8 class="flex justify-between">
 <a role=button>脚手架指令</a>
 </label>
@@ -197,7 +197,7 @@ English
 </ul>
 </li>
 <li>
-<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/synergy/>Scaffold Synergy</a>
+<a href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/synergy/ class=active>Scaffold Synergy</a>
 <ul>
 </ul>
 </li>
@@ -281,68 +281,94 @@ TG Studio
 <label for=menu-control>
 <img src=/v2rss-docs/svg/menu.svg class=book-icon alt=Menu>
 </label>
-<strong>注意事项</strong>
+<strong>Scaffold Synergy</strong>
 <label for=toc-control>
 </label>
 </div>
 <link rel=stylesheet href=//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css>
 </header>
-<article class=markdown><h2 id=注意事项>
-注意事项
-<a class=anchor href=#%e6%b3%a8%e6%84%8f%e4%ba%8b%e9%a1%b9>#</a>
+<article class=markdown><h2 id=scaffold-synergy>
+Scaffold Synergy
+<a class=anchor href=#scaffold-synergy>#</a>
 </h2>
-<h3 id=进程冻结>
-进程冻结
-<a class=anchor href=#%e8%bf%9b%e7%a8%8b%e5%86%bb%e7%bb%93>#</a>
+<h3 id=name>
+NAME
+<a class=anchor href=#name>#</a>
 </h3>
-<blockquote class="book-hint warning">
-📌 云彩姬会主动限制用户的请求频率。
-</blockquote>
-<p>软件内置的进程锁函数将综合 <u>本地请求历史</u> 与 <u>服务时区残差</u> 等多种因素锁死进程。封禁时间一般位于 15~45s 之间。</p>
-<div class=book-expand>
-<label>
-<div class="book-expand-head flex justify-between">
-<span>展开插图</span>
-<span>↕</span>
-</div>
-<input type=checkbox class=hidden>
-<div class="book-expand-content markdown-inner">
-<div align=center><img src=AQvIyKTFLg8ERO7.png alt=进程冻结></div>
-</div>
-</label>
-</div>
-<h3 id=其他声明>
-<strong>其他声明</strong>
-<a class=anchor href=#%e5%85%b6%e4%bb%96%e5%a3%b0%e6%98%8e>#</a>
+<p>main.py synergy - 部署协同工作节点</p>
+<h3 id=synopsis>
+SYNOPSIS
+<a class=anchor href=#synopsis>#</a>
 </h3>
-<blockquote class="book-hint info">
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>main.py synergy -
+</code></pre></div><h3 id=description>
+DESCRIPTION
+<a class=anchor href=#description>#</a>
+</h3>
+<h4 id=intro>
+INTRO
+<a class=anchor href=#intro>#</a>
+</h4>
+<p>在介绍 <code>协同工作</code> 的概念前，需要先了解以下与之相关的背景知识。</p>
+<p>在采集实例上下文超级参数 <code>hyper_params</code> 中设定了 <code>aff</code> 和 <code>synergy</code> 两个关键字。</p>
 <ul>
-<li>
-<p>云彩姬是一个由维护者提供的用于项目演示的 demo，并不是一个成熟的生产工具。</p>
+<li>aff=AFF
+<ul>
+<li>Type:Optional[int]</li>
+<li>Default:0</li>
+<li>协同机拷贝数</li>
+</ul>
 </li>
-<li>
-<p>若您在使用过程中遇到 <u>响应迟钝</u>，<u>窗体消失</u> 等问题，请检查您当前的网络状况，等待数秒后仍无响应请重启软件。</p>
-</li>
-<li>
-<p>若无特殊需求，本项目 <code>Panel</code> （云彩姬）将不再升级或更新，其余项目进度将在
-<a href=https://github.com/QIN2DIM/V2RayCloudSpider/projects>Projects</a> 中公示。</p>
-</li>
-<li>
-<p>无论是使用过程中遇到的困难，还是有关本项目的需求建议，您都可以在
-<a href=https://github.com/QIN2DIM/V2RayCloudSpider/issues/new/choose><code>issue</code></a> 中留言。</p>
+<li>synergy=SYNERGY
+<ul>
+<li>TypeOptional[bool]</li>
+<li>Default:False</li>
+<li>协同模式/采集模式上下文切换</li>
+</ul>
 </li>
 </ul>
-</blockquote>
+<h4 id=aff>
+AFF
+<a class=anchor href=#aff>#</a>
+</h4>
+<p><code>aff</code> 凭借提供商“佣金返利”的商业模式，携带被增益订阅的邀请链接进行多对一的协同注册，简单实现被增益订阅可用流量的拔升。每个提供商的“返利”规则大有不同，账户邀请链接数和增益流量大相径庭。</p>
+<p>因此，并不是任何一个采集实例都可以设定 <code>aff</code> 参数，也并不是所有可以设定 <code>aff</code> 参数的采集实例都值得被增益，部分规则的返利流量实在太少，相对的采集成本较大，在拥有性价比更高的选择时，可以忽略。</p>
+<p>显然的，<code>aff</code> 的设定需要遵循规则，其因该是一个大于零的自然数，且不应多于规则限制的可邀请数量。在最佳实践中，<code>aff∈[1,10]</code> 这在源码中也加以限制，当玩家设定的 <code>aff</code> 超乎预期时，协同实例的拷贝逻辑将失效。</p>
+<h4 id=synergy>
+SYNERGY
+<a class=anchor href=#synergy>#</a>
+</h4>
+<p>由上文可知，当采集实例正常结束前，会进行 <code>aff</code> 超级参数的解析，若含义有效，则会拷贝 <code>aff</code> 个切换至协同模式的实例通过 <code>MessageQueue(RedisClient)</code> 广播至订阅频道。需要注意的是，这个广播出去的信息是一个完整的（处于协同模式的）运行实例对象的「上下文摘要」，监听此频道的 <code>synergy</code> 服务节点都可以正常过滤解析这些字段，并通过一系列逻辑将摘要信息恢复成实例运行所需的各项参数，最后执行协同注册任务。</p>
+<h4 id=synergy-pattern>
+SYNERGY PATTERN
+<a class=anchor href=#synergy-pattern>#</a>
+</h4>
+<p>到了正式介绍 <code>协同工作</code> 模式的时候了。使用如下指令可拉起一个协同工作进程，显然地，它不需要任何脚手架参数。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>python main.py synergy
+</code></pre></div><ul>
+<li>
+<p><code>synergy pattern</code> 的指令逻辑被精简优化，可部署到任意的物理机上，甚至一台物理机可以部署多个 <code>synergy</code> 服务节点。</p>
+</li>
+<li>
+<p>处于 <code>协同模式</code> 的服务节点几乎只做三件事： 接受 <code>aff</code> 上下文信息，恢复现场，执行协同注册任务。</p>
+</li>
+<li>
+<p><code>synergy_node</code> 基于 <code>APScheduler</code> 运行，节点宕机可被自动拉起恢复工作。</p>
+</li>
+<li>
+<p>处于 <code>协同模式</code> 的服务节点可以长期工作。只要核心业务代码不做升级，<code>synergy_node</code>可以一直运行下去，如上文所说，<code>synergy_node</code>可以正常解码任务信息并执行指定任务，无论我们再怎么更新采集队列，变换队列容量或属性，甚至拓展采集器的业务逻辑，只要不改动上下文摘要的“通信协议头”，<code>synergy_node</code>就能不停机地一直工作下去（若协议头不匹配，会把无法解析的消息当成杂质过滤掉）。</p>
+</li>
+</ul>
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/9d561d4aa1431c1ed0881479ea7b7d27f6c5704e title="最后修改者 QIN2DIM | October 10, 2021" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/1a3de1752435abc41c8d9732f562305441123271 title="最后修改者 QIN2DIM | January 14, 2022" target=_blank rel=noopener>
 <img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
-<span>October 10, 2021</span>
+<span>January 14, 2022</span>
 </a>
 </div>
 <div>
-<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content.zh/docs/user/v2rss-cli/toc/_index.md target=_blank rel=noopener>
+<a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/tree/main/content.zh/docs/player/cli/synergy/_index.md target=_blank rel=noopener>
 <img src=/v2rss-docs/svg/edit.svg class=book-icon alt=Edit>
 <span>编辑本页</span>
 </a>
