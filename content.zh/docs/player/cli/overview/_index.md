@@ -11,87 +11,118 @@ weight: 1
 
 # V2RSS 脚手架指令
 
-{{< columns >}} <!-- begin columns block -->
+## 基础指令
 
-## [scaffold ping](/docs/player/cli/ping)
-
-测试数据库连接。这是个不常用的功能，仅会在新环境首次创建时使用，如在 GitHub Actions 中检查配置是否正确。
-
-<---> <!-- magic separator, between columns -->
-
-## [scaffold decouple](/docs/player/cli/decouple)
-
-剔除 live 订阅池中的失效链接。
-
- {{< /columns >}}
+<!-- weight:5~99-->
 
 {{< columns >}} <!-- begin columns block -->
 
-## [scaffold overdue](/docs/player/cli/overdue)
+### [scaffold ping](/docs/player/cli/ping)
 
-剔除 live 订阅池中的过时链接。
+<!-- weight:5-->
+
+测试 Redis 数据库连接。
 
 <---> <!-- magic separator, between columns -->
 
-## [scaffold remain](/docs/player/cli/remain)
+### [scaffold build](/docs/player/cli/build)
 
-打印 live 订阅池的运行状态，所含信息包括「订阅源」的存活数量，类型以及别名。
+<!-- weight:10-->
+
+在 Ubuntu 中构建基础运行环境。
 
  {{< /columns >}}
+
+## 订阅管理
+
+<!-- weight:100~200-->
 
 {{< columns >}} <!-- begin columns block -->
 
-## [scaffold parse](/docs/player/cli/parse)
+### [scaffold pool](/docs/player/cli/pool)
 
-内置的订阅解析工具。完成订阅链接--节点分享链接--节点服务器明文信息的正反向解析工作。
+<!-- weight:100-->
+
+订阅池的命令行管理工具。功能包括：剔除 `alive_pool` 中的失效订阅或过期订阅，输出订阅池状态等。
 
 <---> <!-- magic separator, between columns -->
 
-## [scaffold build](/docs/player/cli/build)
-
-构建运行环境。这是个不常用的功能，仅会在服务首次部署时使用，如在 GitHub Actions 中拉取缺失的第三方依赖。
-
  {{< /columns >}}
+
+## 系统任务
+
+<!-- weight:300~400-->
+
+{{< columns >}}
+
+### [scaffold deploy](/docs/player/cli/deploy)
+
+<!-- weight:300-->
+
+部署定时任务节点。
+
+<--->
+
+### [scaffold synergy](/docs/player/cli/snergy)
+
+<!-- weight:310-->
+
+部署协同工作节点。
+
+{{< /columns >}}
 
 {{< columns >}} <!-- begin columns block -->
 
-## [scaffold spawn](/docs/player/cli/spawn)
+### [scaffold server](/docs/player/cli/server)
 
-一次性清空并执行本机所有采集实例。任务基于 gevent 并发执行，运行功率取决于队列大小以及本机硬件性能。
+<!-- weight:320-->
+
+部署 `PRODUCTION` 接口服务器。
 
 <---> <!-- magic separator, between columns -->
 
-## [scaffold server](/docs/player/cli/server)
+### [scaffold entropy](/docs/player/cli/entropy)
 
-部署调试服务，挂载可用的定时任务，并部署 flask 请求中转服务。任何可启动的项目都可通过配置文件精准调控。
+<!-- weight:330-->
 
- {{< /columns >}}
+采集队列的命令行管理工具。功能包括：更新待办任务、更新采集队列容量，检查待办任务心跳，输出采集队列摘要信息。
+
+{{< /columns >}} 
+
+## 高级指令
+
+<!-- weight:500~600-->
 
 {{< columns >}} <!-- begin columns block -->
 
-## [scaffold mining](/docs/player/cli/mining)
+### [scaffold mining](/docs/player/cli/mining)
 
-采集、清洗、分类、存储暴露在公网上的 SSPanel-Uim 站点。少数情况下可用于扫描不携带 staff statement footer 的分类站点。
+<!-- weight:500-->
+
+采集、清洗、分类、存储暴露在公网上的 SSPanel-Uim 站点。
 
 <---> <!-- magic separator, between columns -->
 
-## [scaffold entropy](/docs/player/cli/entropy)
+### [scaffold spawn](/docs/player/cli/spawn)
 
-在控制台输出本机采集队列的抽象信息。包含的字段有存活周期，源链接以及采集类型。
+<!-- weight:510-->
 
- {{< /columns >}}
+释放所有本机采集实例，基于 gevent 并发执行。
+
+{{< /columns >}}
+
+## 实验功能
+
+<!-- weight:1000+-->
 
 {{< columns >}} <!-- begin columns block -->
 
-## [scaffold ash](/docs/player/cli/ash)
+### [scaffold ash](/docs/player/cli/ash)
 
-「实验功能」 内置的 Clash for Windows 订阅拉取组件，可实现代理节点的一键采集，清洗，转换与自动导入。 
+<!-- weight:1000-->
+
+通过设定的 `threshold` 审查订阅池，清洗出各类订阅中的优质节点，重新排列组合生成可被 Clash 吸收的规则的 `config.yaml` ；自动打开 Clash 导入配置文件。
 
 <---> <!-- magic separator, between columns -->
 
-## [scaffold panel](/docs/player/cli/panel)
-
-「实验功能」唤起由 Easygui 编写的仪表盘工具箱。
-
  {{< /columns >}}
-
