@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Scaffold Build # NAME # 在 Ubuntu 白环境下构建运行环境。建议在 Ubuntu 18.04 TLS 或 Ubuntu 20.04 TLS 中使用。 SYNOPSIS # main.py build <flags> DESCRIPTION # 构建内容如下： 执行脚本 apt-get update && apt-get install -y gcc wget unzip 更新源并拉取脚本运行所">
+<meta name=description content="Scaffold Build # NAME # 在 Ubuntu 白环境下构建运行环境。建议在 Ubuntu 18.04 TLS 或 Ubuntu 20.04 TLS 中使用。 SYNOPSIS # main.py build <flags> DESCRIPTION # 构建内容如下： 执行 apt-get update && apt-get install -y gcc wget unzip 更新源并拉取脚本运行所需依">
 <meta name=theme-color content="#FFFFFF">
 <meta name=color-scheme content="light dark"><meta property="og:title" content="Scaffold Build">
 <meta property="og:description" content>
@@ -14,7 +14,7 @@
 <link rel=alternate hreflang=en href=https://blog.echosec.top/v2rss-docs/docs/player/cli/build/ title="Scaffold Build">
 <link rel=stylesheet href=/v2rss-docs/book.min.31cccedbc2b6812eb37d0d37cdf4cb30cb89bd41421d3d51da624e11baccfe92.css integrity="sha256-MczO28K2gS6zfQ03zfTLMMuJvUFCHT1R2mJOEbrM/pI=" crossorigin=anonymous>
 <script defer src=/v2rss-docs/flexsearch.min.js></script>
-<script defer src=/v2rss-docs/zh.search.min.3b04b2863630709b404d6fc4613a42887ee3cdb96c689b2fbab153167ae9f04e.js integrity="sha256-OwSyhjYwcJtATW/EYTpCiH7jzblsaJsvurFTFnrp8E4=" crossorigin=anonymous></script>
+<script defer src=/v2rss-docs/zh.search.min.54f6bbe99a278ab0497644dccc25178fe27b4da977445d63e9cf05872f0d52b8.js integrity="sha256-VPa76ZonirBJdkTczCUXj+J7Tal3RF1j6c8Fhy8NUrg=" crossorigin=anonymous></script>
 <script defer src=/v2rss-docs/sw.min.aeca12fe35b505bfeee163dd053d29bc61e27f5f18031d81beb279f79dca12dd.js integrity="sha256-rsoS/jW1Bb/u4WPdBT0pvGHif18YAx2BvrJ5953KEt0=" crossorigin=anonymous></script>
 <link rel=alternate type=application/rss+xml href=https://blog.echosec.top/v2rss-docs/zh/docs/player/cli/build/index.xml title=V2RSS>
 </head>
@@ -309,17 +309,11 @@ DESCRIPTION
 <p>构建内容如下：</p>
 <ol>
 <li>
-<p>执行脚本 <code>apt-get update && apt-get install -y gcc wget unzip</code> 更新源并拉取脚本运行所需依赖</p>
+<p>执行 <code>apt-get update && apt-get install -y gcc wget unzip</code> 更新源并拉取脚本运行所需依赖。</p>
 </li>
 <li>
-<p>检查 <code>google-chrome</code> 状态，若不存在则安装拉取最新稳定版 <code>google-chrome</code> 并返回版本号，若存在则直接返回当前客户端的版本号。</p>
+<p>检查 <code>google-chrome</code> 状态，若不存在则安装最新稳定版 <code>google-chrome</code> 并返回版本号，若存在则直接返回当前客户端的版本号。</p>
 <p>若指定了 <code>force </code> 参数，本机已存在 <code>google-chrome</code> 时会卸载重装。</p>
-</li>
-<li>
-<p>安装 <code>chromedriver</code>，根据 <code>google-chrome</code> 版本匹配相应版本的驱动。</p>
-</li>
-<li>
-<p>移动 <code>chromdriver</code> 至指定目录下，并赋予 <code>u+x</code> 权限。</p>
 </li>
 <li>
 <p>清理运行缓存（若权限不足则跳过）。清理安装包和下载缓存，清屏。</p>
@@ -346,9 +340,9 @@ FLAGS
 </article>
 <footer class=book-footer>
 <div class="flex flex-wrap justify-between">
-<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/1a3de1752435abc41c8d9732f562305441123271 title="最后修改者 QIN2DIM | January 14, 2022" target=_blank rel=noopener>
+<div><a class="flex align-center" href=https://github.com/qin2dim/v2rss-docs/commit/f13b6bebebd3e3d0fa6e7faa8d28def2ec928694 title="最后修改者 QIN2DIM | January 18, 2022" target=_blank rel=noopener>
 <img src=/v2rss-docs/svg/calendar.svg class=book-icon alt=Calendar>
-<span>January 14, 2022</span>
+<span>January 18, 2022</span>
 </a>
 </div>
 <div>
