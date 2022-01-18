@@ -110,7 +110,7 @@ cd /home/v2rss-alpha/V2RaycSpider1225 && python3 examples/atomic_go.py
 {{< /hint >}}
 
 ```bash
-# 部署系统 任务
+# 部署系统定时任务
 cd /home/v2rss-alpha/V2RaycSpider1225/src && python3 main.py deploy
 
 # 部署协同工作节点

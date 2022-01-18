@@ -26,11 +26,11 @@ main.py spawn <flags>
 基础用法如下：
 
 ```python
-Usage: python main.py nest
+Usage: python main.py spawn
 ______________________________________________________________________
-or: python main.py nest --power=4          |指定并发数
-or: python main.py nest --remote           |读取远程队列的运行实例
-or: python main.py nest --safe             |安全启动，过滤掉需要人机验证的任务
+or: python main.py spawn --power=4          |指定并发数
+or: python main.py spawn --remote           |读取远程队列的运行实例
+or: python main.py spawn --safe             |安全启动，过滤掉需要人机验证的任务
 ______________________________________________________________________
 ```
 
