@@ -50,12 +50,3 @@ Step1: Fork 项目 [🥂](https://github.com/QIN2DIM/V2RayCloudSpider)
 Step2: 根据[技术文档]()合理配置 [`config.yaml`](https://github.com/QIN2DIM/V2RayCloudSpider/blob/master/V2RaycSpider1225/src/config-sample.yaml) 
 
 Step3: 使用脚手架调试并部署服务
-
- 
-
-## **联系我们** 📧
-
-> 本项目由海南大学机器人与人工智能协会数据挖掘小组（`A-RAI.DM`）提供维护
-
-- [**Email**](mailto:HainanU_arai@163.com?subject=GitHub-Issues) **||** [**Home**](https://a-rai.github.io/) **||** [**TG**](https://t.me/joinchat/HlB9SQJubb5VmNU5)
-
